@@ -34,16 +34,12 @@ jobs:
         uses: actions/configure-pages@v4
         with:
           static_site_generator: next
-      - name: Build with Next.js
-        run: |
-          cd app
-          yarn build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: app/out
 
-  build-and-deploy-spec:
+  build-and-deploy:
     permissions:
       contents: read
       pages: write
