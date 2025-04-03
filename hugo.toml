@@ -18,9 +18,6 @@ pygmentsCodefencesGuessSyntax = true
     # Shortname = "XXX"
   [Services.googleAnalytics]
     # id = "XXX"
-
-[[module.imports]]
-  path = "github.com/halogenica/beautifulhugo"
   
 
 [Params]
