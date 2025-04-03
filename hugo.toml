@@ -18,7 +18,6 @@ pygmentsCodefencesGuessSyntax = true
     # Shortname = "XXX"
   [Services.googleAnalytics]
     # id = "XXX"
-  
 
 [Params]
   commit = "https://github.com/verana-labs/verana.foundation-website/tree/"
