@@ -18,6 +18,14 @@ Enable trustworthy interactions and identities using cryptographically secure ve
 
 Prioritize user privacy, data sovereignty, and minimal disclosure, placing people in complete control of their digital identities and personal information.
 
+## About the Verana Foundation
+
+The Verana Foundation is a nonprofit organization dedicated to rebuilding digital trust in an era where the web's original promise of openness, privacy, and decentralization has been undermined. In response to the growing challenges of identity theft, misinformation, and opaque governance in online systems, Verana is stewarding the development of open standards and decentralized infrastructure to support secure, verifiable, interoperable, and privacy-respecting communication.
+
+Through its flagship specifications — the [Verifiable Trust Specification](https://verana-labs.github.io/verifiable-trust-spec/) and the [Verifiable Public Registry Specification](https://verana-labs.github.io/verifiable-trust-vpr-spec/) — the foundation defines a new trust layer for the internet, built on [Verifiable Credentials (VCs)](https://en.wikipedia.org/wiki/Verifiable_credentials), decentralized identifiers (DIDs), and permissioned trust registries.
+
+As the steward of Essential Credential Schemas (ECS), the Verana Foundation not only defines the minimum set of credentials required for establishing trust in digital services and user agents, but also governs their issuance through a transparent and community-driven governance framework. This includes appointing issuer grantors and authorized issuers to ensure that ECS credentials can be relied upon as the foundational trust anchors of a decentralized digital ecosystem.
+
 ## Board Members
 
 - [Fabrice Rochette](https://www.linkedin.com/in/fabricerochette/) - CEO & Co-founder at 2060.io

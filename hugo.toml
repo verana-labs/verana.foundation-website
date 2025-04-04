@@ -81,6 +81,13 @@ pygmentsCodefencesGuessSyntax = true
     weight = 3
 
 [[menu.main]]
+    name = "Intro to Verifiable Trust"
+    url = "page/learn-vt-intro/"
+    weight = 20
+    parent = "Learn"
+
+
+[[menu.main]]
     name = "Governance"
     url = "page/governance/"
     weight = 5

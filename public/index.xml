@@ -51,6 +51,13 @@
     </item>
     <item>
       <title>Learn</title>
+      <link>http://localhost:1313/page/learn-vt-intro/</link>
+      <pubDate>Tue, 05 Nov 2024 00:00:00 +0200</pubDate>
+      <guid>http://localhost:1313/page/learn-vt-intro/</guid>
+      <description>&lt;h2 id=&#34;intro-to-verifiable-trust&#34;&gt;Intro to Verifiable Trust&lt;/h2&gt;&#xA;&lt;p&gt;The internet is broken. Existing communication channels are insecure and outdated. Because they rely on public identifiers — like email addresses, usernames, or phone numbers — anyone who knows your identifier can reach you, whether you invited them or not.&lt;/p&gt;&#xA;&lt;p&gt;Worse, there’s no reliable way to verify the identity of either service providers or users. This leaves the door wide open to spam, phishing, fraud, and identity theft.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Learn</title>
       <link>http://localhost:1313/page/learn/</link>
       <pubDate>Tue, 05 Nov 2024 00:00:00 +0200</pubDate>
       <guid>http://localhost:1313/page/learn/</guid>
@@ -134,18 +141,11 @@
       <description>&lt;p&gt;This is my first post, how exciting!&lt;/p&gt;</description>
     </item>
     <item>
-      <title>About me</title>
-      <link>http://localhost:1313/page/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/page/about/</guid>
-      <description>&lt;p&gt;My name is Inigo Montoya. I have the following qualities:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;I rock a great mustache&lt;/li&gt;&#xA;&lt;li&gt;I&amp;rsquo;m extremely loyal to my family&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;What else do you need?&lt;/p&gt;&#xA;&lt;h3 id=&#34;my-history&#34;&gt;my history&lt;/h3&gt;&#xA;&lt;p&gt;To be honest, I&amp;rsquo;m having some trouble remembering right now, so why don&amp;rsquo;t you just watch &lt;a href=&#34;https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29&#34;&gt;my movie&lt;/a&gt; and it will answer &lt;strong&gt;all&lt;/strong&gt; your questions.&lt;/p&gt;</description>
-    </item>
-    <item>
       <title>Verana Foundation</title>
       <link>http://localhost:1313/page/home/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/page/home/</guid>
-      <description>&lt;h3 id=&#34;-decentralization&#34;&gt;🌐 Decentralization&lt;/h3&gt;&#xA;&lt;p&gt;Establish open standards and infrastructure that empower users, avoiding centralized control and dependency.&lt;/p&gt;&#xA;&lt;h3 id=&#34;-verifiable-trust&#34;&gt;🔒 Verifiable Trust&lt;/h3&gt;&#xA;&lt;p&gt;Enable trustworthy interactions and identities using cryptographically secure verifiable credentials and decentralized identifiers.&lt;/p&gt;&#xA;&lt;h3 id=&#34;-privacy-and-user-control&#34;&gt;🛡️ Privacy and User Control&lt;/h3&gt;&#xA;&lt;p&gt;Prioritize user privacy, data sovereignty, and minimal disclosure, placing people in complete control of their digital identities and personal information.&lt;/p&gt;&#xA;&lt;h2 id=&#34;board-members&#34;&gt;Board Members&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/in/fabricerochette/&#34;&gt;Fabrice Rochette&lt;/a&gt; - CEO &amp;amp; Co-founder at 2060.io&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/in/aogentile/&#34;&gt;Ariel Gentile&lt;/a&gt; - CTO &amp;amp; Co-founder at 2060.io&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/in/mathieugauthron/&#34;&gt;Mathieu Gauthron&lt;/a&gt; - Head of the Verana Network at the Verana Foundation&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/in/david-rennie-b736541/&#34;&gt;David Rennie&lt;/a&gt; - Digital Identity &amp;amp; Data Assurance Specialist&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/in/richard-butlewski-699204/&#34;&gt;Richard Butlewski&lt;/a&gt; - Senior Sales and Business Development team manager at Idemia&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.linkedin.com/in/david-carrasco-zanini-p-7719389b/&#34;&gt;David Carrasco Zanini&lt;/a&gt; - CEO at Alcani&lt;/li&gt;&#xA;&lt;/ul&gt;</description>
+      <description>&lt;h3 id=&#34;-decentralization&#34;&gt;🌐 Decentralization&lt;/h3&gt;&#xA;&lt;p&gt;Establish open standards and infrastructure that empower users, avoiding centralized control and dependency.&lt;/p&gt;&#xA;&lt;h3 id=&#34;-verifiable-trust&#34;&gt;🔒 Verifiable Trust&lt;/h3&gt;&#xA;&lt;p&gt;Enable trustworthy interactions and identities using cryptographically secure verifiable credentials and decentralized identifiers.&lt;/p&gt;&#xA;&lt;h3 id=&#34;-privacy-and-user-control&#34;&gt;🛡️ Privacy and User Control&lt;/h3&gt;&#xA;&lt;p&gt;Prioritize user privacy, data sovereignty, and minimal disclosure, placing people in complete control of their digital identities and personal information.&lt;/p&gt;&#xA;&lt;h2 id=&#34;about-the-verana-foundation&#34;&gt;About the Verana Foundation&lt;/h2&gt;&#xA;&lt;p&gt;The Verana Foundation is a nonprofit organization dedicated to rebuilding digital trust in an era where the web&amp;rsquo;s original promise of openness, privacy, and decentralization has been undermined. In response to the growing challenges of identity theft, misinformation, and opaque governance in online systems, Verana is stewarding the development of open standards and decentralized infrastructure to support secure, verifiable, interoperable, and privacy-respecting communication.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
