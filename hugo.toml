@@ -86,6 +86,12 @@ pygmentsCodefencesGuessSyntax = true
     weight = 20
     parent = "Learn"
 
+[[menu.main]]
+    name = "Trust Resolution explained"
+    url = "page/learn-vt-tr-explained/"
+    weight = 25
+    parent = "Learn"
+
 
 [[menu.main]]
     name = "Governance"
