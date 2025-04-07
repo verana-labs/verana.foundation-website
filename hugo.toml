@@ -81,16 +81,36 @@ pygmentsCodefencesGuessSyntax = true
     weight = 3
 
 [[menu.main]]
-    name = "Intro to Verifiable Trust"
-    url = "page/learn-vt-intro/"
+    name = "Why we need Verifiable Trust"
+    url = "page/learn-vt-why/"
     weight = 20
     parent = "Learn"
 
 [[menu.main]]
-    name = "Trust Resolution explained"
-    url = "page/learn-vt-tr-explained/"
+    name = "Verifiable Trust Demystified"
+    url = "page/learn-vt-demystified/"
     weight = 25
     parent = "Learn"
+
+[[menu.main]]
+    name = "Business Models"
+    url = "page/learn-vt-business-models/"
+    weight = 30
+    parent = "Learn"
+
+[[menu.main]]
+    name = "Reputation and Trust Deposit"
+    url = "page/learn-vt-trust-deposit-and-reputation/"
+    weight = 35
+    parent = "Learn"
+
+[[menu.main]]
+    name = "Service Directory and Search Engine"
+    url = "page/learn-vt-service-directory/"
+    weight = 40
+    parent = "Learn"
+
+
 
 
 [[menu.main]]

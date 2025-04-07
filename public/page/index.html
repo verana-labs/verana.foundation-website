@@ -90,9 +90,15 @@
               <a class="navlinks-parent" role="button" tabindex="0">Learn</a>
               <div class="navlinks-children">
                 
-                  <a href="/page/learn-vt-intro/">Intro to Verifiable Trust</a>
+                  <a href="/page/learn-vt-why/">Why we need Verifiable Trust</a>
                 
-                  <a href="/page/learn-vt-tr-explained/">Trust Resolution explained</a>
+                  <a href="/page/learn-vt-demystified/">Verifiable Trust Demystified</a>
+                
+                  <a href="/page/learn-vt-business-models/">Business Models</a>
+                
+                  <a href="/page/learn-vt-trust-deposit-and-reputation/">Reputation and Trust Deposit</a>
+                
+                  <a href="/page/learn-vt-service-directory/">Service Directory and Search Engine</a>
                 
               </div>
             </li>
@@ -705,55 +711,6 @@
 </article>
           
             <article class="post-preview">
-    <a href="http://localhost:1313/page/learn-vt-intro/">
-        <h2 class="post-title">Learn</h2>
-        
-        <h3 class="post-subtitle">
-            To empower digital trust and privacy by developing open standards, decentralized infrastructure, and transparent governance frameworks that enable secure, verifiable, and user-controlled interactions across the digital world
-        </h3>
-        
-        
-        
-    </a>
-
-    <p class="post-meta">
-        <span class="post-meta">
-  
-  
-  <i class="fas fa-calendar"></i>&nbsp;Posted on November 5, 2024
-  
-    &nbsp;(Last modified on April 4, 2025)
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;7&nbsp;minutes
-  
-  
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;1346&nbsp;words
-  
-  
-    
-      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Verana Foundation
-    
-  
-  
-</span>
-
-
-    </p>
-    <div class="post-entry">
-        
-        <h2 id="intro-to-verifiable-trust">Intro to Verifiable Trust</h2>
-<p>The internet is broken. Existing communication channels are insecure and outdated. Because they rely on public identifiers — like email addresses, usernames, or phone numbers — anyone who knows your identifier can reach you, whether you invited them or not.</p>
-<p>Worse, there’s no reliable way to verify the identity of either service providers or users. This leaves the door wide open to spam, phishing, fraud, and identity theft.</p>
-        <a href="http://localhost:1313/page/learn-vt-intro/" class="post-read-more">[Read More]</a>
-        
-    </div>
-
-    
-
-</article>
-          
-            <article class="post-preview">
     <a href="http://localhost:1313/page/learn/">
         <h2 class="post-title">Learn</h2>
         
@@ -804,11 +761,11 @@
 </article>
           
             <article class="post-preview">
-    <a href="http://localhost:1313/page/learn-vt-tr-explained/">
-        <h2 class="post-title">Trust Resolution explained</h2>
+    <a href="http://localhost:1313/page/learn-vt-trust-deposit-and-reputation/">
+        <h2 class="post-title">Reputation and Trust Deposit</h2>
         
         <h3 class="post-subtitle">
-            To empower digital trust and privacy by developing open standards, decentralized infrastructure, and transparent governance frameworks that enable secure, verifiable, and user-controlled interactions across the digital world
+            It takes time to build a reputation.
         </h3>
         
         
@@ -825,7 +782,7 @@
     &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;120&nbsp;words
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;2&nbsp;words
   
   
     
@@ -839,43 +796,8 @@
     </p>
     <div class="post-entry">
         
-        <h2 id="trust-resolution-explained">Trust Resolution explained</h2>
-<p>Trust Resolution is as simple as calling a method passing the DID of the service we want to resolve, to display a Proof-of-Trust to the end-user:</p>
-<figure>
-    <img src="/img/proof-of-trust.png" alt="" style="max-width: 300px; border: 1px solid #DDDDDD; float: right; margin-top: 0px; margin-bottom: 20px; margin-right: 20px; margin-left: 20px;" >
-    <figcaption></figcaption>
-  </figure>  
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">resolve_trust(&#34;did:example:abc&#34;)
-</span></span></code></pre></div><p>and receive a response similar to this one:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{
-</span></span><span class="line"><span class="cl">  &#34;did&#34;:&#34;did:example:abc&#34;,
-</span></span><span class="line"><span class="cl">  &#34;verified&#34;: true,
-</span></span><span class="line"><span class="cl">  &#34;service_provider&#34;: {
-</span></span><span class="line"><span class="cl">      &#34;id&#34;: &#34;did:example:def&#34;,
-</span></span><span class="line"><span class="cl">      &#34;type&#34;: &#34;Organization&#34;,
-</span></span><span class="line"><span class="cl">      &#34;name&#34;: &#34;Mobiera Spain SL&#34;,
-</span></span><span class="line"><span class="cl">      &#34;country&#34;: &#34;es&#34;,
-</span></span><span class="line"><span class="cl">      &#34;reputation&#34;: {
-</span></span><span class="line"><span class="cl">        &#34;issuedCredentials&#34;: 1234,
-</span></span><span class="line"><span class="cl">        &#34;verifiedCredentials&#34;: 7678,
-</span></span><span class="line"><span class="cl">        &#34;trustDepositValue&#34;: 176327.124356,
-</span></span><span class="line"><span class="cl">        &#34;amountSlashed&#34;: 0,
-</span></span><span class="line"><span class="cl">        &#34;stars&#34;: 5.0
-</span></span><span class="line"><span class="cl">      },
-</span></span><span class="line"><span class="cl">      &#34;issuer&#34;: &#34;did:example:zzz&#34;,
-</span></span><span class="line"><span class="cl">      ...
-</span></span><span class="line"><span class="cl">  },
-</span></span><span class="line"><span class="cl">  &#34;service&#34;: {
-</span></span><span class="line"><span class="cl">      &#34;name&#34;: &#34;Gaia Registry&#34;,
-</span></span><span class="line"><span class="cl">      &#34;termsAndConditions&#34;: &#34;http://example.com&#34;,
-</span></span><span class="line"><span class="cl">      &#34;privacyPolicy&#34;: &#34;http://example.com&#34;,
-</span></span><span class="line"><span class="cl">      &#34;minimumAgeRequired&#34;: 16,
-</span></span><span class="line"><span class="cl">      &#34;description&#34;: &#34;Create your Metaverse ID at Gaia Registry! Protect your identity with biometrics and easily recover it if you loose your phone. Use your Gaia Identity to connect to fancy services with no password.&#34;
-</span></span><span class="line"><span class="cl">      ...
-</span></span><span class="line"><span class="cl">  }
-</span></span><span class="line"><span class="cl">  ...
-</span></span><span class="line"><span class="cl">}
-</span></span></code></pre></div>
+        <h2 id="trust-deposit">Trust Deposit</h2>
+
         
     </div>
 
@@ -884,11 +806,11 @@
 </article>
           
             <article class="post-preview">
-    <a href="http://localhost:1313/page/home/">
-        <h2 class="post-title">Verana Foundation</h2>
+    <a href="http://localhost:1313/page/learn-vt-service-directory/">
+        <h2 class="post-title">Service Directory and Search Engine</h2>
         
         <h3 class="post-subtitle">
-            To empower digital trust and privacy by developing open standards, decentralized infrastructure, and transparent governance frameworks that enable secure, verifiable, and user-controlled interactions across the digital world
+            It takes time to build a reputation.
         </h3>
         
         
@@ -899,15 +821,13 @@
         <span class="post-meta">
   
   
-  <i class="fas fa-calendar"></i>&nbsp;Posted on January 1, 0001
-  
-    &nbsp;(Last modified on April 4, 2025)
+  <i class="fas fa-calendar"></i>&nbsp;Posted on November 5, 2024
   
   
-    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;1&nbsp;minutes
   
   
-    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;287&nbsp;words
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;105&nbsp;words
   
   
     
@@ -921,15 +841,58 @@
     </p>
     <div class="post-entry">
         
-        <h3 id="-decentralization">🌐 Decentralization</h3>
-<p>Establish open standards and infrastructure that empower users, avoiding centralized control and dependency.</p>
-<h3 id="-verifiable-trust">🔒 Verifiable Trust</h3>
-<p>Enable trustworthy interactions and identities using cryptographically secure verifiable credentials and decentralized identifiers.</p>
-<h3 id="-privacy-and-user-control">🛡️ Privacy and User Control</h3>
-<p>Prioritize user privacy, data sovereignty, and minimal disclosure, placing people in complete control of their digital identities and personal information.</p>
-<h2 id="about-the-verana-foundation">About the Verana Foundation</h2>
-<p>The Verana Foundation is a nonprofit organization dedicated to rebuilding digital trust in an era where the web&rsquo;s original promise of openness, privacy, and decentralization has been undermined. In response to the growing challenges of identity theft, misinformation, and opaque governance in online systems, Verana is stewarding the development of open standards and decentralized infrastructure to support secure, verifiable, interoperable, and privacy-respecting communication.</p>
-        <a href="http://localhost:1313/page/home/" class="post-read-more">[Read More]</a>
+        <h2 id="service-directory">Service Directory</h2>
+<p>The DID directory is a public database of DID that can be used by crawlers to index the metadata of the VS provided by these DID.</p>
+<p>Search engines simply need to iterate over the DID Directory and index VSs based on VS metadata (DID Document, presented credentials,…) For example, the DID directory is essential to Verifiable User Agents (VUAs), such as social browsers, cdn browsers,… but can although be used by a general classic form-based search engine that would return simple link(s) for accessing VSs.</p>
+        <a href="http://localhost:1313/page/learn-vt-service-directory/" class="post-read-more">[Read More]</a>
+        
+    </div>
+
+    
+
+</article>
+          
+            <article class="post-preview">
+    <a href="http://localhost:1313/page/learn-vt-decentralization/">
+        <h2 class="post-title">Trust Resolution explained</h2>
+        
+        <h3 class="post-subtitle">
+            Proof-of-Trust, decentralized services, credential based business models where all participants are rewarded, transparent service directory with unbiased search results: welcome to the future
+        </h3>
+        
+        
+        
+    </a>
+
+    <p class="post-meta">
+        <span class="post-meta">
+  
+  
+  <i class="fas fa-calendar"></i>&nbsp;Posted on November 5, 2024
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-clock"></i>&nbsp;2&nbsp;minutes
+  
+  
+    &nbsp;|&nbsp;<i class="fas fa-book"></i>&nbsp;325&nbsp;words
+  
+  
+    
+      &nbsp;|&nbsp;<i class="fas fa-user"></i>&nbsp;Verana Foundation
+    
+  
+  
+</span>
+
+
+    </p>
+    <div class="post-entry">
+        
+        <h2 id="decentralization-the-perfect-verifiable-trust-companion">Decentralization: the Perfect Verifiable Trust Companion</h2>
+<p>Added to the feature of providing a Proof-of-Trust, there are many other benefits offered by Verifiable Credential usage for identifying services, particularly suitable for decentralization.</p>
+<p>As messaging services were the first explored services by one of our founder members <a href="https://2060.io">2060 OÜ</a>, it will serve as a concrete example - that you can even try on your own as it is implemented.</p>
+<p>In a normal messaging service, such as Whatsapp or Telegram, everything is centralized and controlled by the owner of the messaging service:</p>
+        <a href="http://localhost:1313/page/learn-vt-decentralization/" class="post-read-more">[Read More]</a>
         
     </div>
 
@@ -938,6 +901,15 @@
 </article>
           
         </div>
+        
+          <ul class="pager main-pager">
+            
+            
+              <li class="next">
+                <a href="http://localhost:1313/page/page/2/">Older Posts &rarr;</a>
+              </li>
+            
+          </ul>
         
       </div>
     </div>

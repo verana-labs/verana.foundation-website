@@ -1,12 +1,12 @@
 ---
-title: Learn
+title: Why we need Verifiable Trust
 date: 2024-11-05T00:00:00+02:00
-subtitle: To empower digital trust and privacy by developing open standards, decentralized infrastructure, and transparent governance frameworks that enable secure, verifiable, and user-controlled interactions across the digital world
+subtitle: There’s no reliable way to verify the identity of either service providers or users. This leaves the door wide open to spam, phishing, fraud, and identity theft.
 comments: false
 bigimg: [{src: "/img/triangle.jpg"}, {src: "/img/sphere.jpg"}, {src: "/img/hexagon.jpg"}]
 ---
 
-## Intro to Verifiable Trust
+## Why we need Verifiable Trust
 
 The internet is broken. Existing communication channels are insecure and outdated. Because they rely on public identifiers — like email addresses, usernames, or phone numbers — anyone who knows your identifier can reach you, whether you invited them or not.
 
@@ -30,9 +30,13 @@ That’s the purpose of **Verifiable Trust**.
 
 Today, identifying who is truly behind a digital service is incredibly difficult. Most communication channels lack built-in mechanisms for trust and verification.
 
+{{< image "/img/ssl-cert.png" "SSL Certificate. No verifiable service provider." "max-width: 300px; border: 1px solid #DDDDDD; margin-top: 0em; margin-bottom: 0.5em; margin-right: 0.5em; margin-left: 0em;" "text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 2.5em; margin-left: 0em; padding: 0em; float: left; " >}}
+
 - **SSL certificates**, while effective for encrypting traffic between two endpoints, do not reveal who owns or operates the service on the other side. They ensure secure transmission—not trustworthy identity.
 
 - On **social networks**, there is no standardized or verifiable way to confirm the identity of a profile or page owner. Impersonation is common, and users are left to guess what's real.
+
+{{< image "/img/telegram-group.jpg" "Telegram group." "max-width: 200px; border: 1px solid #DDDDDD; float: right; margin-top: 20px; margin-bottom: 0.5em; margin-right: 0em; margin-left: 1em;" "text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 1em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 1em; padding: 0em; float: right; " >}}
 
 - In **messaging apps** like WhatsApp or Telegram, chatbot services and automated accounts can easily be impersonated. Users have no reliable way to confirm the identity or legitimacy of who they are interacting with.
 
@@ -48,11 +52,15 @@ While app stores offer basic rating and review systems for apps themselves, thes
 
 For example, Telegram may have millions of positive reviews, but users have no way to evaluate the trustworthiness of individual channels, groups, or bots inside the app.
 
+Independent services like [TrustPilot](https://www.trustpilot.com/) exist, but they imply user must connect to a third party service separately.
+
 End users and service providers lack a portable, verifiable reputation that can be carried across platforms and independently verified.
 
 This absence of a standardized, decentralized reputation layer makes it easy for malicious actors to operate without consequence, while legitimate providers struggle to build trust.
 
 ### Age Verification
+
+{{< image "/img/age-verif.png" "Age verification popup." "max-width: 330px; border: 1px solid #DDDDDD; margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 0.5em;" "text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 2.5em; padding: 0em; float: right; " >}}
 
 We need to protect our kids online — but today’s internet makes it difficult.
 
@@ -67,6 +75,8 @@ A safer internet requires a verifiable, privacy-preserving approach to age contr
 This process should be seamless, privacy-respecting, and enforceable without central surveillance or data collection.
 
 ### Federated Login
+
+{{< image "/img/sonatype.png" "sonatype.com login" "max-width: 220px; border: 1px solid #DDDDDD; float: right; margin-top: 0px; margin-bottom: 0.5em; margin-right: 0px; margin-left: 30px;" "text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 0em; padding: 0em; float: right; " >}}
 
 Federated login (e.g., "Log in with Google," "Log in with Facebook") offers convenience, but it comes with serious drawbacks that undermine privacy, security, and digital sovereignty.
 
@@ -163,10 +173,4 @@ A VPR includes:
 - Tokenized Trust Layer: A decentralized economy that governs validation processes, reputation systems, and usage incentives via Trust Deposits, balances that grow with active participation and can be slashed for rule violations.
 
 - Verifiable Service Directory: A searchable index of Verifiable Services that can power decentralized search engines, allowing discovery based not on ads or backlinks, but on cryptographically verified trust.
-
-{{< figure src=/img/diddirindex.svg >}}
-
-
-{{< figure src=/img/verana-search.png >}}
-
 

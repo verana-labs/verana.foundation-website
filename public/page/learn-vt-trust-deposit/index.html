@@ -1,0 +1,779 @@
+
+
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+ 
+
+
+      <title>Verifiable Trust demystified - </title>
+
+  <meta name="description" content="Intro to Verifiable Trust, Proof-of-Trust, Deep Dive into Verifiable Trust and Business Models ">
+  <meta name="author" content="Verana Foundation"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Verana Foundation",
+    
+    "url": "http:\/\/localhost:1313\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "http:\/\/localhost:1313\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "http:\/\/localhost:1313\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "http:\/\/localhost:1313\/page\/learn-vt-trust-deposit\/",
+          "name": "Verifiable trust demystified"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Verana Foundation"
+  },
+  "headline": "Verifiable Trust demystified",
+  "description" : "Intro to Verifiable Trust: the Proof-of-Trust Proof-of-Trust. Trust Resolution is as simple as calling a method passing the DID of the service we want to resolve, to display a Proof-of-Trust to the end-user:\nresolve_trust(\u0026#34;did:example:gaia\u0026#34;) and receive a response similar to this one:\n",
+  "inLanguage" : "en",
+  "wordCount":  986 ,
+  "datePublished" : "2024-11-05T00:00:00\u002b02:00",
+  "dateModified" : "2024-11-05T00:00:00\u002b02:00",
+  "image" : "http:\/\/localhost:1313\/img\/avatar-icon.png",
+  "keywords" : [ "" ],
+  "mainEntityOfPage" : "http:\/\/localhost:1313\/page\/learn-vt-trust-deposit\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "http:\/\/localhost:1313\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "http:\/\/localhost:1313\/img\/avatar-icon.png",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+
+<meta property="og:title" content="Verifiable Trust demystified" />
+<meta property="og:description" content="Intro to Verifiable Trust, Proof-of-Trust, Deep Dive into Verifiable Trust and Business Models ">
+<meta property="og:image" content="http://localhost:1313/img/avatar-icon.png" />
+<meta property="og:url" content="http://localhost:1313/page/learn-vt-trust-deposit/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Verana Foundation" />
+
+  <meta name="twitter:title" content="Verifiable Trust demystified" />
+  <meta name="twitter:description" content="Intro to Verifiable Trust, Proof-of-Trust, Deep Dive into Verifiable Trust and Business Models ">
+  <meta name="twitter:image" content="http://localhost:1313/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@username" />
+  <meta name="twitter:creator" content="@username" />
+  <link href='http://localhost:1313/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.145.0">
+  <link rel="alternate" href="http://localhost:1313/index.xml" type="application/rss+xml" title="Verana Foundation"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.css" integrity="sha384-3UiQGuEI4TTMaFmGIZumfRPtfKQ3trwQE2JgosJxCnGmQpL/lJdjpcHkaaFwHlcI" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css" integrity="sha384-h/hnnw1Bi4nbpD6kE7nYfCXzovi622sY5WBxww8ARKwpdLj5kUWjRuyiXaD1U2JT" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"><link rel="stylesheet" href="http://localhost:1313/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="http://localhost:1313/css/highlight.min.css" /><link rel="stylesheet" href="http://localhost:1313/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="http://localhost:1313/">Verana Foundation</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Home" href="/page/home/">Home</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Deliverables" href="/page/deliverables/">Deliverables</a>
+            </li>
+          
+        
+          
+            <li class="navlinks-container">
+              <a class="navlinks-parent" role="button" tabindex="0">Learn</a>
+              <div class="navlinks-children">
+                
+                  <a href="/page/learn-vt-why/">Why we need Verifiable Trust</a>
+                
+                  <a href="/page/learn-vt-demystified/">Verifiable Trust Demystified</a>
+                
+                  <a href="/page/learn-vt-business-models/">Business Models</a>
+                
+              </div>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Governance" href="/page/governance/">Governance</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="FAQ" href="/page/faq/">FAQ</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Blog" href="/post/">Blog</a>
+            </li>
+          
+        
+
+        
+
+        
+      </ul>
+    </div>
+
+    
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a title="Verana Foundation" href="http://localhost:1313/">
+            <img class="avatar-img" src="http://localhost:1313/img/avatar-icon.png" alt="Verana Foundation" />
+           
+          </a>
+        </div>
+      </div>
+    
+
+  </div>
+</nav>
+
+
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+    <div id="header-big-imgs" data-num-img=3
+      
+         
+          data-img-src-1="/img/triangle.jpg"
+         
+         
+      
+         
+          data-img-src-2="/img/sphere.jpg"
+         
+         
+      
+         
+          data-img-src-3="/img/hexagon.jpg"
+         
+         
+      ></div>
+  
+
+  <header class="header-section has-img">
+    
+      
+      <div class="intro-header big-img" style="background-image: url('/img/triangle.jpg');">
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div class="page-heading">
+                <h1>Verifiable Trust demystified</h1>
+                  
+                    
+                      <hr class="small">
+                      <span class="page-subheading">Intro to Verifiable Trust, Proof-of-Trust, Deep Dive into Verifiable Trust and Business Models </span>
+                    
+                  
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="img-desc" style="display: none;"></span>
+      </div>
+    
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="page-heading">
+              
+                <h1>Verifiable Trust demystified</h1>
+              
+              
+                <hr class="small">
+              
+              
+                
+                  <span class="page-subheading">Intro to Verifiable Trust, Proof-of-Trust, Deep Dive into Verifiable Trust and Business Models </span>
+                
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <h2 id="intro-to-verifiable-trust-the-proof-of-trust">Intro to Verifiable Trust: the Proof-of-Trust</h2>
+<figure  style="text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 2.5em; padding: 0em; float: right; "  >
+    <img src="/img/proof-of-trust.png" alt="Proof-of-Trust." style="max-width: 300px; border: 1px solid #DDDDDD; margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 0.5em;" >
+    <figcaption>Proof-of-Trust.</figcaption>
+  </figure>  
+<p>Trust Resolution is as simple as calling a method passing the DID of the service we want to resolve, to display a <strong>Proof-of-Trust</strong> to the end-user:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">resolve_trust(&#34;did:example:gaia&#34;)
+</span></span></code></pre></div><p>and receive a response similar to this one:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{
+</span></span><span class="line"><span class="cl">  &#34;did&#34;:&#34;did:example:gaia&#34;,
+</span></span><span class="line"><span class="cl">  &#34;verified&#34;: true,
+</span></span><span class="line"><span class="cl">  &#34;service_provider&#34;: {
+</span></span><span class="line"><span class="cl">      &#34;id&#34;: &#34;did:example:def&#34;,
+</span></span><span class="line"><span class="cl">      &#34;type&#34;: &#34;Organization&#34;,
+</span></span><span class="line"><span class="cl">      &#34;name&#34;: &#34;Gaia Registry LLC&#34;,
+</span></span><span class="line"><span class="cl">      &#34;country&#34;: &#34;zz&#34;,
+</span></span><span class="line"><span class="cl">      &#34;reputation&#34;: {
+</span></span><span class="line"><span class="cl">        &#34;issuedCredentials&#34;: 1234,
+</span></span><span class="line"><span class="cl">        &#34;verifiedCredentials&#34;: 7678,
+</span></span><span class="line"><span class="cl">        &#34;trustDepositValue&#34;: 176327.124356,
+</span></span><span class="line"><span class="cl">        &#34;amountSlashed&#34;: 0,
+</span></span><span class="line"><span class="cl">        &#34;stars&#34;: 5.0
+</span></span><span class="line"><span class="cl">      },
+</span></span><span class="line"><span class="cl">      &#34;issuer&#34;: &#34;did:example:zzz&#34;,
+</span></span><span class="line"><span class="cl">      ...
+</span></span><span class="line"><span class="cl">  },
+</span></span><span class="line"><span class="cl">  &#34;service&#34;: {
+</span></span><span class="line"><span class="cl">      &#34;name&#34;: &#34;Gaia Registry&#34;,
+</span></span><span class="line"><span class="cl">      &#34;termsAndConditions&#34;: &#34;http://example.com&#34;,
+</span></span><span class="line"><span class="cl">      &#34;privacyPolicy&#34;: &#34;http://example.com&#34;,
+</span></span><span class="line"><span class="cl">      &#34;minimumAgeRequired&#34;: 16,
+</span></span><span class="line"><span class="cl">      &#34;description&#34;: &#34;Create your Metaverse ID at Gaia Registry! Protect your identity with biometrics and easily recover it if you loose your phone. Use your Gaia Identity to connect to fancy services with no password.&#34;
+</span></span><span class="line"><span class="cl">      ...
+</span></span><span class="line"><span class="cl">  },
+</span></span><span class="line"><span class="cl">  &#34;credentials&#34; : [
+</span></span><span class="line"><span class="cl">    {
+</span></span><span class="line"><span class="cl">      &#34;type&#34;: &#34;TrademarkCredential&#34;,
+</span></span><span class="line"><span class="cl">      ...
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">  ]
+</span></span><span class="line"><span class="cl">  ...
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></div><h2 id="deep-dive-into-verifiable-trust">Deep Dive into Verifiable Trust</h2>
+<p>Let&rsquo;s explain how the Verifiable Trust does it.</p>
+<figure  style="text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 2.5em; padding: 0em; float: right; "  >
+    <img src="/img/verifiable-service.png" alt="Popup of a chatbot Verifiable Service." style="max-width: 200px; border: 1px solid #DDDDDD; margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 0.5em;" >
+    <figcaption>Popup of a chatbot Verifiable Service.</figcaption>
+  </figure>  
+<p>Verifiable Trust (VT) introduces 3 main concepts:</p>
+<ul>
+<li>Verifiable Service (VS),</li>
+<li>Verifiable User Agent (VUA), and</li>
+<li>Verifiable Public Registry (VPR).</li>
+</ul>
+<h3 id="what-is-a-verifiable-service-vs">What is a Verifiable Service (VS)?</h3>
+<p>A VS is a service that provides a way to identify itself to a peer, before the peer connects to it.</p>
+<p>Entities that want to connect to a VS can review its presented verifiable credentials, prove their legitimacy by performing a trust resolution, and based on the result, decide to connect or not.</p>
+<p>A VS must resolve trust of peers that attempt to connect to it (VS and/or VUA) and refuse connections from non-verifiable peers.</p>
+<p>Additionally, a verifiable service that would like to issue or request verification of credentials, must prove it is allowed to do so, else peer must refuse that action.</p>
+<h3 id="what-is-a-verifiable-user-agent-vua">What is a Verifiable User Agent (VUA)?</h3>
+<p>A Verifiable User Agent (VUA) is a software (a browser, an app, a wallet…) for connecting to VSs and other VUAs. When establishing connections, a VUA must verify the connection peer(s) and allow connection(s) only to compliant VS and VUA peers.</p>
+<p>Additionally, VUAs must perform a trust resolution by verifying the credentials presented by the peers and query VPR(s) to check that these credentials have been issued by verified issuers.</p>
+<h3 id="what-is-a-verifiable-public-registry-vpr">What is a Verifiable Public Registry (VPR)?</h3>
+<p>A Verifiable Public Registry (VPR) is a “registry of registries” public service, which provides:</p>
+<ul>
+<li>
+<p>Trust registry features, that can be used by any Ecosystem: create trust registries, for each trust registry, define its credential schemas, who can issue, verify credential of a specific credential schema, business models…</p>
+</li>
+<li>
+<p>a query API, used by VSs, VUAs, needed by trust resolution.</p>
+</li>
+</ul>
+<figure  style="max-width: 600px; text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 2.5em; padding: 0em; float: none; "  >
+    <img src="/img/verifiable-public-registry.png" alt="A VPR is a Registry of Registries (RoR)." style="max-width: 600px;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 0.5em; " >
+    <figcaption>A VPR is a Registry of Registries (RoR).</figcaption>
+  </figure>  
+<h4 id="trust-registries">Trust Registries</h4>
+<p>Each Ecosystem Trust Registry is identified by a resolvable DID, and provides, at least:</p>
+<ul>
+<li>Governance Framework document(s).</li>
+<li>Zero or more Credential Schemas.</li>
+</ul>
+<figure  style="max-width: 200px; text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 2.5em; padding: 0em; float: none; "  >
+    <img src="/img/tr.png" alt="A Trust Registry." style="max-width: 200px;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 0.5em; " >
+    <figcaption>A Trust Registry.</figcaption>
+  </figure>  
+<p>A VPR doesn’t care about the DID methods used because trust resolution is performed outside the VPR.</p>
+<h4 id="credential-schemas">Credential Schemas</h4>
+<p>Credential Schemas are created by Trust Registry owners (Ecosystems). Each Credential Schema is composed of, at least:</p>
+<ul>
+<li>a Json Schema, to define the corresponding Verifiable Credential schema.</li>
+<li>a PermissionManagementMode to configure issuance policy for issuing credentials of this schema. It can be granted to anyone (OPEN), granted directly by the Trust Registry controller (TRUST_REGISTRY) to issuers, or granted by an issuer grantor (GRANTOR_VALIDATION).</li>
+<li>a PermissionManagementMode to configure verification policy for verifying credentials of this schema. It can be granted to anyone (OPEN), granted directly by the Trust Registry controller (TRUST_REGISTRY) or granted by a verifier grantor (GRANTOR_VALIDATION).</li>
+<li>a Permission tree.</li>
+</ul>
+<figure  style="max-width: 600px; text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 0em; padding: 0em; float: none; "  >
+    <img src="/img/permission-tree-small.png" alt="A Permission tree." style="max-width: 600px;  margin-top: 0em; margin-bottom: 0em; margin-right: 0em; margin-left: 0em; " >
+    <figcaption>A Permission tree.</figcaption>
+  </figure>  
+<p>Participant roles are defined in the table below:</p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Participant Role</strong></th>
+          <th><strong>Description</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Trust Registry</strong></td>
+          <td>Create and control Credential Schemas. Grant other roles.</td>
+      </tr>
+      <tr>
+          <td><strong>Issuer Grantor</strong></td>
+          <td>Grant Issuer permissions to candidate issuers.</td>
+      </tr>
+      <tr>
+          <td><strong>Verifier Grantor</strong></td>
+          <td>Grant Verifier permissions to candidate verifiers.</td>
+      </tr>
+      <tr>
+          <td><strong>Issuer</strong></td>
+          <td>Can issue credentials of this schema.</td>
+      </tr>
+      <tr>
+          <td><strong>Verifier</strong></td>
+          <td>Can request presentation of credentials of this schema.</td>
+      </tr>
+      <tr>
+          <td><strong>Holder</strong></td>
+          <td>Special role used for selected business models.</td>
+      </tr>
+  </tbody>
+</table>
+<p>Example of a Json Schema credential schema:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{
+</span></span><span class="line"><span class="cl">  &#34;$id&#34;: &#34;vpr-mainnet:/vpr/v1/cs/js/VPR_CREDENTIAL_SCHEMA_ID&#34;,
+</span></span><span class="line"><span class="cl">  &#34;$schema&#34;: &#34;https://json-schema.org/draft/2020-12/schema&#34;,
+</span></span><span class="line"><span class="cl">  &#34;title&#34;: &#34;SimpleExampleCredential&#34;,
+</span></span><span class="line"><span class="cl">  &#34;description&#34;: &#34;SimpleExampleCredential using JsonSchema&#34;,
+</span></span><span class="line"><span class="cl">  &#34;type&#34;: &#34;object&#34;,
+</span></span><span class="line"><span class="cl">  &#34;properties&#34;: {
+</span></span><span class="line"><span class="cl">    &#34;credentialSubject&#34;: {
+</span></span><span class="line"><span class="cl">      &#34;type&#34;: &#34;object&#34;,
+</span></span><span class="line"><span class="cl">      &#34;properties&#34;: {
+</span></span><span class="line"><span class="cl">        &#34;id&#34;: {
+</span></span><span class="line"><span class="cl">          &#34;type&#34;: &#34;string&#34;,
+</span></span><span class="line"><span class="cl">          &#34;format&#34;: &#34;uri&#34;
+</span></span><span class="line"><span class="cl">        },
+</span></span><span class="line"><span class="cl">        &#34;firstName&#34;: {
+</span></span><span class="line"><span class="cl">          &#34;type&#34;: &#34;string&#34;,
+</span></span><span class="line"><span class="cl">          &#34;minLength&#34;: 0,
+</span></span><span class="line"><span class="cl">          &#34;maxLength&#34;: 256
+</span></span><span class="line"><span class="cl">        },
+</span></span><span class="line"><span class="cl">        &#34;lastName&#34;: {
+</span></span><span class="line"><span class="cl">          &#34;type&#34;: &#34;string&#34;,
+</span></span><span class="line"><span class="cl">          &#34;minLength&#34;: 1,
+</span></span><span class="line"><span class="cl">          &#34;maxLength&#34;: 256
+</span></span><span class="line"><span class="cl">        },
+</span></span><span class="line"><span class="cl">        &#34;expirationDate&#34;: {
+</span></span><span class="line"><span class="cl">          &#34;type&#34;: &#34;string&#34;,
+</span></span><span class="line"><span class="cl">          &#34;format&#34;: &#34;date&#34;
+</span></span><span class="line"><span class="cl">        },
+</span></span><span class="line"><span class="cl">        &#34;countryOfResidence&#34;: {
+</span></span><span class="line"><span class="cl">          &#34;type&#34;: &#34;string&#34;,
+</span></span><span class="line"><span class="cl">          &#34;minLength&#34;: 2,
+</span></span><span class="line"><span class="cl">          &#34;maxLength&#34;: 2
+</span></span><span class="line"><span class="cl">        }
+</span></span><span class="line"><span class="cl">      },
+</span></span><span class="line"><span class="cl">      &#34;required&#34;: [
+</span></span><span class="line"><span class="cl">        &#34;id&#34;,
+</span></span><span class="line"><span class="cl">        &#34;lastName&#34;,
+</span></span><span class="line"><span class="cl">        &#34;birthDate&#34;,
+</span></span><span class="line"><span class="cl">        &#34;expirationDate&#34;,
+</span></span><span class="line"><span class="cl">        &#34;countryOfResidence&#34;
+</span></span><span class="line"><span class="cl">      ]
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></div><p>After creating the Json Schema, the ecosystem owner of the Trust Registry will issue a <a href="https://www.w3.org/TR/vc-json-schema/">Json Schema Credential</a> with the DID it registered as DID of the Trust Registry in the VPR, to prove ownership of the schema and the DID:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{
+</span></span><span class="line"><span class="cl">  &#34;@context&#34;: [
+</span></span><span class="line"><span class="cl">      &#34;https://www.w3.org/ns/credentials/v2&#34;
+</span></span><span class="line"><span class="cl">  ],
+</span></span><span class="line"><span class="cl">  &#34;id&#34;: &#34;https://trust-registry/example-credential-json-schema-credential.json&#34;,
+</span></span><span class="line"><span class="cl">  &#34;type&#34;: [&#34;VerifiableCredential&#34;, &#34;JsonSchemaCredential&#34;],
+</span></span><span class="line"><span class="cl">  &#34;issuer&#34;: &#34;did:example:trust-registry&#34;,
+</span></span><span class="line"><span class="cl">  &#34;issuanceDate&#34;: &#34;2024-01-01T19:23:24Z&#34;,
+</span></span><span class="line"><span class="cl">  &#34;credentialSchema&#34;: {
+</span></span><span class="line"><span class="cl">    &#34;id&#34;: &#34;https://w3c.github.io/vc-json-schema/schema/json-schema-credential-schema.json&#34;,
+</span></span><span class="line"><span class="cl">    &#34;type&#34;: &#34;JsonSchema&#34;,
+</span></span><span class="line"><span class="cl">    &#34;digestSRI&#34;: &#34;sha384-S57yQDg1MTzF56Oi9DbSQ14u7jBy0RDdx0YbeV7shwhCS88G8SCXeFq82PafhCrW&#34;
+</span></span><span class="line"><span class="cl">  },
+</span></span><span class="line"><span class="cl">  &#34;credentialSubject&#34;: {
+</span></span><span class="line"><span class="cl">    &#34;id&#34;: &#34;vpr-mainnet:/vpr/v1/cs/js/12345678&#34;,
+</span></span><span class="line"><span class="cl">    &#34;type&#34;: &#34;JsonSchema&#34;,
+</span></span><span class="line"><span class="cl">    &#34;jsonSchema&#34;: {
+</span></span><span class="line"><span class="cl">      &#34;$ref&#34;: &#34;vpr-mainnet:/vpr/v1/cs/js/12345678&#34;
+</span></span><span class="line"><span class="cl">    },
+</span></span><span class="line"><span class="cl">    &#34;digestSRI&#34;: &#34;sha384-ABCSGyugst67rs67rdbugsy0RDdx0YbeV7shwhCS88G8SCXeFq82PafhCeZ&#34; 
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></div><p>Finally, the Ecosystem must declare the Json Schema Credential in the DID Document of the declared Trust Registry DID in the VPR, as well as the location of the Trust Registry in the VPR:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&#34;service&#34;: [
+</span></span><span class="line"><span class="cl">    {
+</span></span><span class="line"><span class="cl">      &#34;id&#34;: &#34;did:example:trust-registry#vpr-schemas-example-credential-schema-credential&#34;,
+</span></span><span class="line"><span class="cl">      &#34;type&#34;: &#34;LinkedVerifiablePresentation&#34;,
+</span></span><span class="line"><span class="cl">      &#34;serviceEndpoint&#34;: [&#34;https://trust-registry/example-credential-schema-presentation.json&#34;]
+</span></span><span class="line"><span class="cl">    },
+</span></span><span class="line"><span class="cl">    {
+</span></span><span class="line"><span class="cl">      &#34;id&#34;: &#34;did:example:trust-registry#vpr-schemas-trust-registry-1234&#34;,
+</span></span><span class="line"><span class="cl">      &#34;type&#34;: &#34;VerifiablePublicRegistry&#34;,
+</span></span><span class="line"><span class="cl">      &#34;version&#34;: &#34;1.0&#34;,
+</span></span><span class="line"><span class="cl">      &#34;serviceEndpoint&#34;: [&#34;vpr-mainnet:/vpr/v1/&#34;]
+</span></span><span class="line"><span class="cl">    }
+</span></span><span class="line"><span class="cl">    ...
+</span></span><span class="line"><span class="cl">  ]
+</span></span></code></pre></div><h4 id="issue-verifiable-credentials">Issue Verifiable Credentials</h4>
+<p>When the Ecosystem has created its Credential Schemas in the VPR, created its corresponding Json Schema Credentials, and properly setup the &ldquo;service&rdquo; section of its trust registry DID Document, it is now possible to issue credentials based on these schemas.</p>
+<p>Credentials that comply with the Verifiable Trust specification are called Verifiable Trust Credentials. These credentials must refer to, in their credentialSchema attribute, the corresponding JsonSchemaCredential issued by the Trust Registry DID.</p>
+<p>In our previous example, that would mean and ExampleCredential should look like this example:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{
+</span></span><span class="line"><span class="cl">  &#34;@context&#34;: [
+</span></span><span class="line"><span class="cl">    &#34;https://www.w3.org/ns/credentials/v2&#34;
+</span></span><span class="line"><span class="cl">  ],
+</span></span><span class="line"><span class="cl">  &#34;id&#34;: &#34;did:example:issuer&#34;,
+</span></span><span class="line"><span class="cl">  &#34;type&#34;: [&#34;VerifiableCredential&#34;, &#34;VerifiableTrustCredential&#34;, &#34;ExampleCredential&#34;],
+</span></span><span class="line"><span class="cl">  &#34;issuer&#34;: &#34;did:example:issuer&#34;,
+</span></span><span class="line"><span class="cl">  &#34;credentialSubject&#34;: {
+</span></span><span class="line"><span class="cl">     &#34;id&#34;: &#34;did:example:abcdef&#34;,
+</span></span><span class="line"><span class="cl">    ...
+</span></span><span class="line"><span class="cl">  },
+</span></span><span class="line"><span class="cl">  ...
+</span></span><span class="line"><span class="cl">  &#34;credentialSchema&#34;: {
+</span></span><span class="line"><span class="cl">    &#34;id&#34;: &#34;https://trust-registry/example-credential-json-schema-credential.json&#34;,
+</span></span><span class="line"><span class="cl">    &#34;type&#34;: &#34;JsonSchemaCredential&#34;
+</span></span><span class="line"><span class="cl">  }
+</span></span><span class="line"><span class="cl">}
+</span></span></code></pre></div><p>We can summarize the dependencies, from trust registry created in VPR, until issued credential.</p>
+<figure  style="max-width: 800px; text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 2.5em; padding: 0em; float: none; "  >
+    <img src="/img/vt-cred.png" alt="" style="max-width: 800px;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 0.5em; " >
+    <figcaption></figcaption>
+  </figure>  
+
+
+        
+
+        
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=http%3a%2f%2flocalhost%3a1313%2fpage%2flearn-vt-trust-deposit%2f&amp;text=Verifiable%20Trust%20demystified&amp;via=username" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=http%3a%2f%2flocalhost%3a1313%2fpage%2flearn-vt-trust-deposit%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//reddit.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fpage%2flearn-vt-trust-deposit%2f&amp;title=Verifiable%20Trust%20demystified" target="_blank" title="Share on Reddit">
+          <i class="fab fa-reddit"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=http%3a%2f%2flocalhost%3a1313%2fpage%2flearn-vt-trust-deposit%2f&amp;title=Verifiable%20Trust%20demystified" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.stumbleupon.com/submit?url=http%3a%2f%2flocalhost%3a1313%2fpage%2flearn-vt-trust-deposit%2f&amp;title=Verifiable%20Trust%20demystified" target="_blank" title="Share on StumbleUpon">
+          <i class="fab fa-stumbleupon"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.pinterest.com/pin/create/button/?url=http%3a%2f%2flocalhost%3a1313%2fpage%2flearn-vt-trust-deposit%2f&amp;description=Verifiable%20Trust%20demystified" target="_blank" title="Share on Pinterest">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+
+              </div>
+            </section>
+        
+
+        
+          
+
+          
+        
+      </article>
+
+      
+
+
+      
+
+    </div>
+  </div>
+</div>
+
+      
+    <div class="page-meta">
+  
+  
+  
+</div>
+
+
+  <footer>
+  <div class="container">
+    
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+		
+		  <a href="https://github.com/verana-labs" title="GitHub">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+		
+		  <a href="https://twitter.com/username" title="Twitter">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-x-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+		
+		  <a href="https://username.slack.com/" title="Slack">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-slack fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+		
+		  <a href="https://reddit.com/u/username" title="Reddit">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-reddit-alien fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+		
+		  <a href="https://linkedin.com/in/username" title="LinkedIn">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+		
+		  <a href="https://medium.com/@username" title="Medium">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-medium fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+		
+		  <a href="https://discord.gg/invite%20code%20%28https://discord.gg/XXXXXXX%29" title="Discord">
+		
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-discord fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+
+           &copy;
+          
+            2025
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="http://localhost:1313/">Verana Foundation</a>
+          
+        </p>
+        
+      </div>
+    </div>
+  </div>
+</footer><script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/katex.min.js" integrity="sha384-G0zcxDFp5LWZtDuRMnBkk3EphCK1lhEf4UEyEM693ka574TZGwo4IWwS6QLzM/2t" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.7/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+<script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha384-w5y/xIeYixWvfM+A1cEbmHPURnvyqmVg5eVENruEdDjcyRLUSNej7512JQGspFUr" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+<script src="http://localhost:1313/js/main.js"></script>
+<script src="http://localhost:1313/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="http://localhost:1313/js/load-photoswipe.js"></script>
+
+
+
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+
