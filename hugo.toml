@@ -67,7 +67,7 @@ pygmentsCodefencesGuessSyntax = true
 [[menu.main]]
     name = "Home"
     url = "page/home/"
-    weight = -10
+    weight = 1
 
 [[menu.main]]
     name = "Deliverables"

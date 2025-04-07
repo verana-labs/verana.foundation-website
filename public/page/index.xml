@@ -6,7 +6,7 @@
     <description>Recent content in Pages on Verana Foundation</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 04 Apr 2025 16:33:54 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 06 Apr 2025 23:42:28 -0500</lastBuildDate>
     <atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Donate</title>
@@ -69,7 +69,7 @@
       <link>http://localhost:1313/page/learn-vt-service-directory/</link>
       <pubDate>Tue, 05 Nov 2024 00:00:00 +0200</pubDate>
       <guid>http://localhost:1313/page/learn-vt-service-directory/</guid>
-      <description>&lt;h2 id=&#34;service-directory&#34;&gt;Service Directory&lt;/h2&gt;&#xA;&lt;p&gt;The DID directory is a public database of DID that can be used by crawlers to index the metadata of the VS provided by these DID.&lt;/p&gt;&#xA;&lt;p&gt;Search engines simply need to iterate over the DID Directory and index VSs based on VS metadata (DID Document, presented credentials,…) For example, the DID directory is essential to Verifiable User Agents (VUAs), such as social browsers, cdn browsers,… but can although be used by a general classic form-based search engine that would return simple link(s) for accessing VSs.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;service-directory&#34;&gt;Service Directory&lt;/h2&gt;&#xA;&lt;p&gt;The Service Directory is a public database of &lt;a href=&#34;https://www.w3.org/TR/did-1.0/&#34;&gt;DIDs&lt;/a&gt; that can be used by crawlers to index the metadata of the VS provided by these DIDs.&lt;/p&gt;&#xA;&lt;p&gt;Search engines simply need to iterate over the Service Directory and index VSs based on VS metadata (DID Document, presented credentials,…) For example, the Service directory is essential to Verifiable User Agents (VUAs), such as social browsers, cdn browsers,… but can although be used by a general classic form-based search engine that would return simple link(s) for accessing VSs.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Trust Resolution explained</title>
