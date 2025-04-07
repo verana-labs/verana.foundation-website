@@ -65,7 +65,7 @@
   "headline": "Verifiable Trust demystified",
   "description" : "Understanding Verifiable Trust Proof-of-Trust. Trust Resolution is as simple as calling a method passing the DID of the service we want to resolve, to display a Proof-of-Trust to the end-user:\nresolve_trust(\u0026#34;did:example:gaia\u0026#34;) and receive a response similar to this one:\n",
   "inLanguage" : "en",
-  "wordCount":  983 ,
+  "wordCount":  1099 ,
   "datePublished" : "2024-11-05T00:00:00\u002b02:00",
   "dateModified" : "2025-04-06T23:42:28-05:00",
   "image" : "http:\/\/localhost:1313\/img\/avatar-icon.png",
@@ -394,13 +394,20 @@
 <p>A Verifiable User Agent (VUA) is a software (a browser, an app, a wallet…) for connecting to VSs and other VUAs. When establishing connections, a VUA must verify the connection peer(s) and allow connection(s) only to compliant VS and VUA peers.</p>
 <p>Additionally, VUAs must perform a trust resolution by verifying the credentials presented by the peers and query VPR(s) to check that these credentials have been issued by verified issuers.</p>
 <h3 id="what-is-a-verifiable-public-registry-vpr">What is a Verifiable Public Registry (VPR)?</h3>
-<p>A Verifiable Public Registry (VPR) is a “registry of registries” public service, which provides:</p>
+<p>A <strong>Verifiable Public Registry (VPR)</strong> is a <strong>“registry of registries”</strong>, a public service that provides foundational infrastructure for decentralized trust ecosystems. It offers:</p>
 <ul>
 <li>
-<p>Trust registry features, that can be used by any Ecosystem: create trust registries, for each trust registry, define its credential schemas, who can issue, verify credential of a specific credential schema, business models…</p>
+<p><strong>Trust Registry Management</strong>:<br>
+Ecosystems can create and manage their own <strong>Trust Registries</strong>, each with:</p>
+<ul>
+<li>Defined <strong>Credential Schemas</strong></li>
+<li>Assigned roles for <strong>Issuers</strong>, <strong>Verifiers</strong>, and <strong>Grantors</strong></li>
+<li>Custom <strong>business models</strong> and permission policies</li>
+</ul>
 </li>
 <li>
-<p>a query API, used by VSs, VUAs, needed by trust resolution.</p>
+<p><strong>Query API for Trust Resolution</strong>:<br>
+A standardized API used by <strong>Verifiable Services (VSs)</strong> and <strong>Verifiable User Agents (VUAs)</strong> to perform trust resolution, enabling them to query registry data and validate roles and permissions in real time.</p>
 </li>
 </ul>
 <figure  style="max-width: 600px; text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 2.5em; padding: 0em; float: none; "  >
@@ -408,23 +415,35 @@
     <figcaption>A VPR is a Registry of Registries (RoR).</figcaption>
   </figure>  
 <h4 id="trust-registries">Trust Registries</h4>
-<p>Each Ecosystem Trust Registry is identified by a resolvable DID, and provides, at least:</p>
+<p>Each <strong>Ecosystem Trust Registry</strong> is uniquely identified by a <strong>resolvable DID</strong> and must provide, at a minimum:</p>
 <ul>
-<li>Governance Framework document(s).</li>
-<li>Zero or more Credential Schemas.</li>
+<li>One or more <strong>Governance Framework</strong> document(s)</li>
+<li>Zero or more <strong>Credential Schemas</strong></li>
 </ul>
+<p>The <strong>Verifiable Public Registry (VPR)</strong> is agnostic to the specific <strong>DID methods</strong> used. Trust resolution is performed externally, outside the VPR, allowing flexibility and interoperability across ecosystems.</p>
 <figure  style="max-width: 200px; text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 2.5em; padding: 0em; float: none; "  >
     <img src="/img/tr.png" alt="A Trust Registry." style="max-width: 200px;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 0.5em; " >
     <figcaption>A Trust Registry.</figcaption>
   </figure>  
-<p>A VPR doesn’t care about the DID methods used because trust resolution is performed outside the VPR.</p>
 <h4 id="credential-schemas">Credential Schemas</h4>
-<p>Credential Schemas are created by Trust Registry owners (Ecosystems). Each Credential Schema is composed of, at least:</p>
+<p><strong>Credential Schemas</strong> are created and managed by <strong>Trust Registry owners</strong> (Ecosystems). Each Credential Schema includes, at a minimum:</p>
 <ul>
-<li>a Json Schema, to define the corresponding Verifiable Credential schema.</li>
-<li>a PermissionManagementMode to configure issuance policy for issuing credentials of this schema. It can be granted to anyone (OPEN), granted directly by the Trust Registry controller (TRUST_REGISTRY) to issuers, or granted by an issuer grantor (GRANTOR_VALIDATION).</li>
-<li>a PermissionManagementMode to configure verification policy for verifying credentials of this schema. It can be granted to anyone (OPEN), granted directly by the Trust Registry controller (TRUST_REGISTRY) or granted by a verifier grantor (GRANTOR_VALIDATION).</li>
-<li>a Permission tree.</li>
+<li>A <strong>JSON Schema</strong> that defines the structure of the corresponding <strong>Verifiable Credential</strong></li>
+<li>A <strong>PermissionManagementMode</strong> for <strong>issuance policy</strong>, which determines how <code>Issuer</code> permissions are granted. Modes include:
+<ul>
+<li><code>OPEN</code>: Anyone can become an Issuer</li>
+<li><code>TRUST_REGISTRY</code>: Permissions are granted directly by the Trust Registry controller</li>
+<li><code>GRANTOR_VALIDATION</code>: Permissions are granted by an <code>Issuer Grantor</code> after a validation process</li>
+</ul>
+</li>
+<li>A <strong>PermissionManagementMode</strong> for <strong>verification policy</strong>, which determines how <code>Verifier</code> permissions are granted. Modes include:
+<ul>
+<li><code>OPEN</code>: Anyone can act as a Verifier</li>
+<li><code>TRUST_REGISTRY</code>: Permissions are granted directly by the Trust Registry controller</li>
+<li><code>GRANTOR_VALIDATION</code>: Permissions are granted by a <code>Verifier Grantor</code> after a validation process</li>
+</ul>
+</li>
+<li>A <strong>Permission Tree</strong> that defines the roles and relationships involved in managing the schema’s lifecycle.</li>
 </ul>
 <figure  style="max-width: 600px; text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 0em; padding: 0em; float: none; "  >
     <img src="/img/permission-tree-small.png" alt="A Permission tree." style="max-width: 600px;  margin-top: 0em; margin-bottom: 0em; margin-right: 0em; margin-left: 0em; " >
@@ -510,7 +529,12 @@
 </span></span><span class="line"><span class="cl">    }
 </span></span><span class="line"><span class="cl">  }
 </span></span><span class="line"><span class="cl">}
-</span></span></code></pre></div><p>After creating the Json Schema, the ecosystem owner of the Trust Registry will issue a <a href="https://www.w3.org/TR/vc-json-schema/">Json Schema Credential</a> with the DID it registered as DID of the Trust Registry in the VPR, to prove ownership of the schema and the DID:</p>
+</span></span></code></pre></div><p>After creating the JSON Schema, the <strong>Ecosystem owner</strong> of the Trust Registry issues a <a href="https://www.w3.org/TR/vc-json-schema/">JSON Schema Credential</a> using the <strong>DID registered as the Trust Registry’s identifier</strong> in the VPR.</p>
+<p>This credential serves as a verifiable proof of:</p>
+<ul>
+<li>Ownership of the <strong>Credential Schema</strong></li>
+<li>Control over the corresponding <strong>Trust Registry DID</strong>.</li>
+</ul>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{
 </span></span><span class="line"><span class="cl">  &#34;@context&#34;: [
 </span></span><span class="line"><span class="cl">      &#34;https://www.w3.org/ns/credentials/v2&#34;
@@ -533,7 +557,8 @@
 </span></span><span class="line"><span class="cl">    &#34;digestSRI&#34;: &#34;sha384-ABCSGyugst67rs67rdbugsy0RDdx0YbeV7shwhCS88G8SCXeFq82PafhCeZ&#34; 
 </span></span><span class="line"><span class="cl">  }
 </span></span><span class="line"><span class="cl">}
-</span></span></code></pre></div><p>Finally, the Ecosystem must declare the Json Schema Credential in the DID Document of the declared Trust Registry DID in the VPR, as well as the location of the Trust Registry in the VPR:</p>
+</span></span></code></pre></div><p>Finally, the Ecosystem must publish both the <strong>JSON Schema Credential</strong> and the <strong>location of the Trust Registry</strong> within the <strong>DID Document</strong> associated with the declared <strong>Trust Registry DID</strong> in the VPR.</p>
+<p>This ensures that the Credential Schema and its controlling Trust Registry are publicly discoverable and cryptographically verifiable.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">&#34;service&#34;: [
 </span></span><span class="line"><span class="cl">    {
 </span></span><span class="line"><span class="cl">      &#34;id&#34;: &#34;did:example:trust-registry#vpr-schemas-example-credential-schema-credential&#34;,
@@ -549,8 +574,14 @@
 </span></span><span class="line"><span class="cl">    ...
 </span></span><span class="line"><span class="cl">  ]
 </span></span></code></pre></div><h4 id="issue-verifiable-credentials">Issue Verifiable Credentials</h4>
-<p>When the Ecosystem has created its Credential Schemas in the VPR, created its corresponding Json Schema Credentials, and properly setup the &ldquo;service&rdquo; section of its trust registry DID Document, it is now possible to issue credentials based on these schemas.</p>
-<p>Credentials that comply with the Verifiable Trust specification are called Verifiable Trust Credentials. These credentials must refer to, in their credentialSchema attribute, the corresponding JsonSchemaCredential issued by the Trust Registry DID.</p>
+<p>Once the Ecosystem has:</p>
+<ul>
+<li>Created its <strong>Credential Schemas</strong> in the VPR</li>
+<li>Issued the corresponding <strong>JSON Schema Credentials</strong></li>
+<li>Properly configured the <code>&quot;service&quot;</code> section of its <strong>Trust Registry DID Document</strong></li>
+</ul>
+<p>…it is now possible to issue <strong>Verifiable Credentials</strong> based on these schemas.</p>
+<p>Credentials that comply with the <strong>Verifiable Trust Specification</strong> are referred to as <strong>Verifiable Trust Credentials</strong>. These credentials must include, in their <code>credentialSchema</code> attribute, a reference to the corresponding <strong>JSON Schema Credential</strong> issued by the Trust Registry DID. This linkage ensures cryptographic proof of the schema&rsquo;s origin and trustworthiness.</p>
 <p>In our previous example, that would mean and ExampleCredential should look like this example:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">{
 </span></span><span class="line"><span class="cl">  &#34;@context&#34;: [

@@ -10,11 +10,13 @@ bigimg: [{src: "/img/triangle.jpg"}, {src: "/img/sphere.jpg"}, {src: "/img/hexag
 
 ### What is the Service Directory?
 
-The Service Directory is a public database of [DIDs](https://www.w3.org/TR/did-1.0/) maintained in a VPR, that can be used by crawlers to index the metadata of the VS provided by these DIDs.
+The **Service Directory** is a public database of [DIDs](https://www.w3.org/TR/did-1.0/) maintained within a **Verifiable Public Registry (VPR)**. It allows crawlers and search engines to index metadata associated with **Verifiable Services (VSs)** provided by these DIDs.
 
-Search engines simply need to iterate over the Service Directory and index VSs based on VS metadata (DID Document, presented credentials,…) For example, the Service directory is essential to Verifiable User Agents (VUAs), such as social browsers, cdn browsers,… but can although be used by a general classic form-based search engine that would return simple link(s) for accessing VSs.
+Search engines can iterate over the Service Directory and index VSs based on available metadata—such as the **DID Document**, **presented credentials**, and other publicly declared attributes.
 
-Any participant can register a DID in the DID directory by executing a transaction in a VPR.
+The Service Directory is essential for **Verifiable User Agents (VUAs)**, including specialized browsers like **social browsers** or **CDN-enabled browsers**. However, it can also be used by traditional, form-based search engines to return simple links that provide access to Verifiable Services.
+
+Any participant can register a DID in the Service Directory by submitting a transaction to the VPR.
 
 {{< image "/img/diddirindex.svg" "" "max-width: 800px;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 0.5em; " "max-width: 800px; text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 2.5em; padding: 0em; float: none; " >}}
 

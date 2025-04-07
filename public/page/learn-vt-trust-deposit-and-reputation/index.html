@@ -63,9 +63,9 @@
     "name" : "Verana Foundation"
   },
   "headline": "Reputation and Trust Deposit",
-  "description" : "Trust Deposit A Trust Deposit is a stake in a VPR network that any participant automatically grows when using the network. Each participant has its own Trust Deposit.\nExecution of a Validation Process grows the Trust Deposit of both the Applicant and the Validator. When issuing or verifying a credential, if pay per issuance and\/or pay per verification is enabled by the Ecosystem, then Trust Deposit of all involved participants in the Permission Tree increase each time a credential is issued and\/or verified. If applicable, involved User Agent Owner and Wallet User Agent Owner Trust Deposit increases as well. Registering or renewing a DID in the Service Directory grows the Trust Deposit of the participant executing the transaction. We can see the Trust Deposit as a percentage deduction that is executed to all circulating trust fees. Example with Verification Fees - as explained in Business Models:\n",
+  "description" : "Trust Deposit A Trust Deposit is a stake within the a VPR network that grows automatically as participants interact with the ecosystem. Each participant maintains their own individual Trust Deposit, which reflects their activity and contribution to the trust network.\nHow Trust Deposits Grow Validation Process:\nWhen a Validation Process is executed, the Trust Deposits of both the Applicant and the Validator increase.\nCredential Issuance \u0026amp; Verification:\nIf the Ecosystem has enabled pay-per-issuance and\/or pay-per-verification, the Trust Deposits of all participants involved in the Permission Tree grow each time a credential is issued or verified.\nAdditionally, if applicable, the Trust Deposits of the involved User Agent Owner and Wallet User Agent Owner are also incremented.\n",
   "inLanguage" : "en",
-  "wordCount":  480 ,
+  "wordCount":  681 ,
   "datePublished" : "2024-11-05T00:00:00\u002b02:00",
   "dateModified" : "2025-04-06T23:42:28-05:00",
   "image" : "http:\/\/localhost:1313\/img\/avatar-icon.png",
@@ -332,30 +332,43 @@
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
         <h2 id="trust-deposit">Trust Deposit</h2>
-<p>A Trust Deposit is a stake in a VPR network that any participant automatically grows when using the network. Each participant has its own Trust Deposit.</p>
+<p>A <strong>Trust Deposit</strong> is a stake within the a VPR network that grows automatically as participants interact with the ecosystem. Each participant maintains their own individual Trust Deposit, which reflects their activity and contribution to the trust network.</p>
+<h3 id="how-trust-deposits-grow">How Trust Deposits Grow</h3>
 <ul>
-<li>Execution of a Validation Process grows the Trust Deposit of both the <code>Applicant</code> and the <code>Validator</code>.</li>
-<li>When issuing or verifying a credential, if pay per issuance and/or pay per verification is enabled by the Ecosystem, then Trust Deposit of all involved participants in the Permission Tree increase each time a credential is issued and/or verified. If applicable, involved <code>User Agent Owner</code> and <code>Wallet User Agent Owner</code> Trust Deposit increases as well.</li>
-<li>Registering or renewing a DID in the Service Directory grows the Trust Deposit of the participant executing the transaction.</li>
+<li>
+<p><strong>Validation Process</strong>:<br>
+When a Validation Process is executed, the <strong>Trust Deposits of both the <code>Applicant</code> and the <code>Validator</code></strong> increase.</p>
+</li>
+<li>
+<p><strong>Credential Issuance &amp; Verification</strong>:<br>
+If the Ecosystem has enabled <strong>pay-per-issuance</strong> and/or <strong>pay-per-verification</strong>, the <strong>Trust Deposits of all participants</strong> involved in the Permission Tree grow each time a credential is issued or verified.<br>
+Additionally, if applicable, the Trust Deposits of the involved <code>User Agent Owner</code> and <code>Wallet User Agent Owner</code> are also incremented.</p>
+</li>
+<li>
+<p><strong>Service Directory Participation</strong>:<br>
+Registering or renewing a DID in the <strong>Service Directory</strong> increases the <strong>Trust Deposit</strong> of the participant who executes the transaction.</p>
+</li>
 </ul>
-<p>We can see the Trust Deposit as a percentage deduction that is executed to all circulating trust fees. Example with Verification Fees - as explained in <a href="/page/learn-vt-business-models.md">Business Models</a>:</p>
+<h3 id="conceptual-model">Conceptual Model</h3>
+<p>The <strong>Trust Deposit</strong> functions like a <strong>percentage-based deduction</strong> applied to circulating trust fees. These deductions accumulate in individual deposits as a reflection of ongoing participation and service provision.</p>
+<p>For example, in the case of <strong>Verification Fees</strong> (as detailed in the <a href="/page/learn-vt-business-models.md">Business Models</a> section), a portion of each fee is redistributed to grow the Trust Deposits of the relevant actors in the verification process.</p>
 <figure  style="max-width: 1200px; text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 2.5em; padding: 0em; float: none; "  >
     <img src="/img/verifier-fee-distrib.svg" alt="" style="max-width: 1200x;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 0.5em; " >
     <figcaption></figcaption>
   </figure>  
 <ul>
 <li>
-<p>Each time fees are charged, a 20% is added and sent to the Trust Deposit of the participant executing the transaction, and corresponding amount is associated to the Permission that permitted the transaction.</p>
+<p>Each time fees are charged, an additional <strong>20%</strong> is added and allocated to the <strong>Trust Deposit</strong> of the participant executing the transaction. This amount is also linked to the specific <strong>Permission</strong> that authorized the transaction.</p>
 </li>
 <li>
-<p>When fees are distributed to other participants, 20% is deduced and sent to their Trust Deposit, while the other 80% are liquid and immediately available.</p>
+<p>When fees are distributed to other participants (e.g., Validators, Grantors, etc.), <strong>20%</strong> of the distributed amount is redirected to their <strong>Trust Deposit</strong>, while the remaining <strong>80%</strong> is <strong>liquid and immediately available</strong> for use.</p>
 </li>
 <li>
-<p>The percentage (here 20%) sent to Trust Deposit is defined by the VPR controller.</p>
+<p>The percentage allocated to Trust Deposits (e.g., 20%) is configurable and defined by the <strong>VPR controller</strong>.</p>
 </li>
 </ul>
 <h3 id="core-purposes">Core Purposes</h3>
-<p>The main purpose behind the Trust Deposit is making sure, for a given Ecosystem, that its participants will respect the Ecosystem Governance Framework.</p>
+<p>The <strong>Trust Deposit</strong> mechanism is designed to ensure that participants within an Ecosystem <strong>adhere to the rules defined in its Ecosystem Governance Framework (EGF)</strong>. It serves as both an incentive and an enforcement tool within decentralized trust infrastructures.</p>
 <table>
   <thead>
       <tr>
@@ -366,27 +379,27 @@
   <tbody>
       <tr>
           <td><strong>Incentivize Good Behavior</strong></td>
-          <td>Entities risk losing their deposit if they act dishonestly or maliciously.</td>
+          <td>Participants risk losing part of their deposit if they behave dishonestly or violate governance rules.</td>
       </tr>
       <tr>
           <td><strong>Signal Serious Intent</strong></td>
-          <td>Requires &ldquo;skin in the game&rdquo; to filter out spam or low-effort actors.</td>
+          <td>Requires participants to have &ldquo;skin in the game,&rdquo; discouraging spam, fraud, and low-effort engagement.</td>
       </tr>
       <tr>
           <td><strong>Enable Slashing</strong></td>
-          <td>Deposits can be slashed if governance rules or trust policies are violated.</td>
+          <td>Deposits can be partially or fully slashed when participants breach trust policies or contractual roles.</td>
       </tr>
       <tr>
           <td><strong>Support Decentralized Governance</strong></td>
-          <td>Forms the economic foundation for role assignment and revocation.</td>
+          <td>Serves as the economic foundation for decentralized permission management, assignment, and revocation.</td>
       </tr>
       <tr>
-          <td><strong>Controlled by each Ecosystem</strong></td>
-          <td>An Ecosystem can only slash a participant the proportional amount linked to its activity on this Ecosystem</td>
+          <td><strong>Ecosystem-Specific Control</strong></td>
+          <td>Each Ecosystem can only slash the portion of a participant’s deposit that corresponds to activity within that Ecosystem.</td>
       </tr>
       <tr>
-          <td><strong>Non-custodial</strong></td>
-          <td>Held in a VPR on-chain, not controlled by any central authority.</td>
+          <td><strong>Non-Custodial</strong></td>
+          <td>Trust Deposits are held on-chain within a VPR and are not under the control of any centralized authority.</td>
       </tr>
   </tbody>
 </table>
@@ -395,17 +408,24 @@
     <figcaption>Example of Trust Reputation.</figcaption>
   </figure>  
 <h3 id="slash">Slash</h3>
-<p>Ecosystems define in their EGF (Ecosystem Governance Framework) the rules for being part of their Ecosystem, and what can happen if rules are not complied.</p>
-<p>When an Ecosystem participant is slashed, its activity is blocked until the slashed Trust Deposit is paid back by slashed participant.</p>
-<h3 id="trust-deposit-based-reputation">Trust Deposit Based Reputation</h3>
-<p>As information related to Network activity and Trust Deposit is public, a participant will build a digital trust reputation over time:</p>
+<p>Each Ecosystem defines, in its <strong>Ecosystem Governance Framework (EGF)</strong>, the rules that participants must follow to remain in good standing. The EGF also specifies the conditions under which a <strong>slash</strong>—a penalty applied to a participant’s Trust Deposit—may occur.</p>
+<p>When a participant is <strong>slashed</strong>:</p>
 <ul>
-<li>its Trust Deposit will grow,</li>
-<li>for each Ecosystem it is taking part, its corresponding Trust Deposit history is visible by all other participants,</li>
-<li>for each Ecosystem it is taking part, the number of issued and/or verified credentials is visible by all other participants,</li>
-<li>dishonest or malicious activity, possibly sanctioned by Ecosystem with a slash, remind associated to the account owner forever.</li>
+<li>The corresponding portion of their <strong>Trust Deposit</strong> is forfeited, based on the severity or type of violation.</li>
+<li>Their ability to perform actions within the Ecosystem (e.g., issuing or verifying credentials) is <strong>suspended</strong>.</li>
+<li>To regain active status, the participant must <strong>replenish the slashed amount</strong> of their Trust Deposit.</li>
 </ul>
-<p>Information can be used to compute a number of stars.</p>
+<p>This mechanism ensures accountability and alignment with the Ecosystem’s trust and governance policies.</p>
+<h3 id="trust-deposit-based-reputation">Trust Deposit-Based Reputation</h3>
+<p>Because network activity and Trust Deposit data are publicly accessible, each participant naturally builds a <strong>digital trust reputation</strong> over time. This reputation reflects both their positive contributions and any violations within the ecosystems they engage in.</p>
+<p>Key reputation signals include:</p>
+<ul>
+<li><strong>Growth of Trust Deposit</strong>: Active, rule-abiding participants see their Trust Deposit increase as they contribute value to the network.</li>
+<li><strong>Ecosystem-Specific History</strong>: For each Ecosystem a participant is involved in, their <strong>Trust Deposit history</strong> is transparently visible to all other participants.</li>
+<li><strong>Credential Activity</strong>: The number of <strong>credentials issued and/or verified</strong> by the participant within each Ecosystem is publicly observable.</li>
+<li><strong>Behavioral Accountability</strong>: Any <strong>dishonest or malicious activity</strong>—especially if penalized through slashing—remains permanently associated with the participant’s account.</li>
+</ul>
+<p>This transparent data can be used to compute a <strong>reputation score</strong> or <strong>star rating</strong>, enabling trust-based decisions across the network.</p>
 
 
         

@@ -8,51 +8,70 @@ bigimg: [{src: "/img/triangle.jpg"}, {src: "/img/sphere.jpg"}, {src: "/img/hexag
 
 ## Trust Deposit
 
-A Trust Deposit is a stake in a VPR network that any participant automatically grows when using the network. Each participant has its own Trust Deposit.
+A **Trust Deposit** is a stake within the a VPR network that grows automatically as participants interact with the ecosystem. Each participant maintains their own individual Trust Deposit, which reflects their activity and contribution to the trust network.
 
-- Execution of a Validation Process grows the Trust Deposit of both the `Applicant` and the `Validator`.
-- When issuing or verifying a credential, if pay per issuance and/or pay per verification is enabled by the Ecosystem, then Trust Deposit of all involved participants in the Permission Tree increase each time a credential is issued and/or verified. If applicable, involved `User Agent Owner` and `Wallet User Agent Owner` Trust Deposit increases as well.  
-- Registering or renewing a DID in the Service Directory grows the Trust Deposit of the participant executing the transaction.
+### How Trust Deposits Grow
 
-We can see the Trust Deposit as a percentage deduction that is executed to all circulating trust fees. Example with Verification Fees - as explained in [Business Models](/page/learn-vt-business-models.md):
+- **Validation Process**:  
+  When a Validation Process is executed, the **Trust Deposits of both the `Applicant` and the `Validator`** increase.
+
+- **Credential Issuance & Verification**:  
+  If the Ecosystem has enabled **pay-per-issuance** and/or **pay-per-verification**, the **Trust Deposits of all participants** involved in the Permission Tree grow each time a credential is issued or verified.  
+  Additionally, if applicable, the Trust Deposits of the involved `User Agent Owner` and `Wallet User Agent Owner` are also incremented.
+
+- **Service Directory Participation**:  
+  Registering or renewing a DID in the **Service Directory** increases the **Trust Deposit** of the participant who executes the transaction.
+
+### Conceptual Model
+
+The **Trust Deposit** functions like a **percentage-based deduction** applied to circulating trust fees. These deductions accumulate in individual deposits as a reflection of ongoing participation and service provision.
+
+For example, in the case of **Verification Fees** (as detailed in the [Business Models](/page/learn-vt-business-models.md) section), a portion of each fee is redistributed to grow the Trust Deposits of the relevant actors in the verification process.
 
 {{< image "/img/verifier-fee-distrib.svg" "" "max-width: 1200x;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 0.5em; " "max-width: 1200px; text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 2.5em; padding: 0em; float: none; " >}}
 
-- Each time fees are charged, a 20% is added and sent to the Trust Deposit of the participant executing the transaction, and corresponding amount is associated to the Permission that permitted the transaction.
+- Each time fees are charged, an additional **20%** is added and allocated to the **Trust Deposit** of the participant executing the transaction. This amount is also linked to the specific **Permission** that authorized the transaction.
 
-- When fees are distributed to other participants, 20% is deduced and sent to their Trust Deposit, while the other 80% are liquid and immediately available.
+- When fees are distributed to other participants (e.g., Validators, Grantors, etc.), **20%** of the distributed amount is redirected to their **Trust Deposit**, while the remaining **80%** is **liquid and immediately available** for use.
 
-- The percentage (here 20%) sent to Trust Deposit is defined by the VPR controller.
+- The percentage allocated to Trust Deposits (e.g., 20%) is configurable and defined by the **VPR controller**.
 
 ### Core Purposes
 
-The main purpose behind the Trust Deposit is making sure, for a given Ecosystem, that its participants will respect the Ecosystem Governance Framework.
+The **Trust Deposit** mechanism is designed to ensure that participants within an Ecosystem **adhere to the rules defined in its Ecosystem Governance Framework (EGF)**. It serves as both an incentive and an enforcement tool within decentralized trust infrastructures.
 
-| **Purpose**                    | **Description**                                                                 |
-|-------------------------------|----------------------------------------------------------------------------------|
-| **Incentivize Good Behavior** | Entities risk losing their deposit if they act dishonestly or maliciously.      |
-| **Signal Serious Intent**     | Requires "skin in the game" to filter out spam or low-effort actors.            |
-| **Enable Slashing**           | Deposits can be slashed if governance rules or trust policies are violated.     |
-| **Support Decentralized Governance** | Forms the economic foundation for role assignment and revocation.         |
-| **Controlled by each Ecosystem** | An Ecosystem can only slash a participant the proportional amount linked to its activity on this Ecosystem|
-| **Non-custodial** | Held in a VPR on-chain, not controlled by any central authority.|
+| **Purpose**                          | **Description**                                                                                      |
+|--------------------------------------|------------------------------------------------------------------------------------------------------|
+| **Incentivize Good Behavior**        | Participants risk losing part of their deposit if they behave dishonestly or violate governance rules. |
+| **Signal Serious Intent**            | Requires participants to have "skin in the game," discouraging spam, fraud, and low-effort engagement. |
+| **Enable Slashing**                  | Deposits can be partially or fully slashed when participants breach trust policies or contractual roles. |
+| **Support Decentralized Governance** | Serves as the economic foundation for decentralized permission management, assignment, and revocation. |
+| **Ecosystem-Specific Control**       | Each Ecosystem can only slash the portion of a participant’s deposit that corresponds to activity within that Ecosystem. |
+| **Non-Custodial**                    | Trust Deposits are held on-chain within a VPR and are not under the control of any centralized authority. |
 
 {{< image "/img/verifiable-service.png" "Example of Trust Reputation." "max-width: 300px; border: 1px solid #DDDDDD; margin-top: 2.5em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 0.5em;" "text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 2.5em; padding: 0em; float: right; " >}}
 
 ### Slash
 
-Ecosystems define in their EGF (Ecosystem Governance Framework) the rules for being part of their Ecosystem, and what can happen if rules are not complied.
+Each Ecosystem defines, in its **Ecosystem Governance Framework (EGF)**, the rules that participants must follow to remain in good standing. The EGF also specifies the conditions under which a **slash**—a penalty applied to a participant’s Trust Deposit—may occur.
 
-When an Ecosystem participant is slashed, its activity is blocked until the slashed Trust Deposit is paid back by slashed participant.
+When a participant is **slashed**:
 
-### Trust Deposit Based Reputation
+- The corresponding portion of their **Trust Deposit** is forfeited, based on the severity or type of violation.
+- Their ability to perform actions within the Ecosystem (e.g., issuing or verifying credentials) is **suspended**.
+- To regain active status, the participant must **replenish the slashed amount** of their Trust Deposit.
 
-As information related to Network activity and Trust Deposit is public, a participant will build a digital trust reputation over time:
+This mechanism ensures accountability and alignment with the Ecosystem’s trust and governance policies.
 
-- its Trust Deposit will grow,
-- for each Ecosystem it is taking part, its corresponding Trust Deposit history is visible by all other participants,
-- for each Ecosystem it is taking part, the number of issued and/or verified credentials is visible by all other participants,
-- dishonest or malicious activity, possibly sanctioned by Ecosystem with a slash, remind associated to the account owner forever.
+### Trust Deposit-Based Reputation
 
-Information can be used to compute a number of stars.
+Because network activity and Trust Deposit data are publicly accessible, each participant naturally builds a **digital trust reputation** over time. This reputation reflects both their positive contributions and any violations within the ecosystems they engage in.
 
+Key reputation signals include:
+
+- **Growth of Trust Deposit**: Active, rule-abiding participants see their Trust Deposit increase as they contribute value to the network.
+- **Ecosystem-Specific History**: For each Ecosystem a participant is involved in, their **Trust Deposit history** is transparently visible to all other participants.
+- **Credential Activity**: The number of **credentials issued and/or verified** by the participant within each Ecosystem is publicly observable.
+- **Behavioral Accountability**: Any **dishonest or malicious activity**—especially if penalized through slashing—remains permanently associated with the participant’s account.
+
+This transparent data can be used to compute a **reputation score** or **star rating**, enabling trust-based decisions across the network.
