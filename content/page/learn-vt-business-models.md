@@ -15,7 +15,7 @@ VPR spec defines two kind of business models:
 
 ### Subscription based Validation Process
 
-Based on configured issuance and verification policies, if schema is not OPEN, to get granted a permission, an `Applicant` must run a Validation Process. `Applicant` starts the Validation Process by selecting an existing `Validator` Permission. Validation Process may require payment of fees, as defined by the `Validator` in its permission. Fees are usually charged using a yearly subscription which means applicant must renew its permission each year, else it expires.
+Based on the configured issuance and verification policies, if a schema is not marked as **OPEN**, an `Applicant` must complete a **Validation Process** to be granted a permission. The `Applicant` initiates this process by selecting an existing `Validator` permission. Each `Validator` defines its own terms, which may include the payment of fees. These fees are typically charged as a **yearly subscription**, requiring the `Applicant` to renew their permission annually. If the subscription is not renewed, the permission will **expire** automatically.
 
 Fee Structure:
 
@@ -32,25 +32,33 @@ Fee Structure:
 - (3): if *issuer PermissionManagementMode* is set to TRUST_REGISTRY.
 - (4): if *verifier PermissionManagementMode* is set to TRUST_REGISTRY.
 
+**Example**: If an `Applicant` wishes to become an `Issuer`, and the `PermissionManagementMode` for credential issuance is configured as `GRANTOR_VALIDATION`, the `Applicant` must undergo a **Validation Process** with an `Issuer Grantor`, who will serve as the `Validator`.
 
-Example: If the `Applicant` would like to be an `Issuer` and the PermissionManagementMode is configured to GRANTOR_VALIDATION for credential issuance, then to be an Issuer, `Applicant` must run a Validation Process with an `Issuer Grantor` that will act as the `Validator`. If defined, issuer candidate will pay validation fees as defined in issuer grantor permission.
+If defined, the `Applicant` is required to pay validation fees, as specified in the `Issuer Grantor`'s permission configuration.
 
-During the Validation Process `Applicant` will prove ownership of DIDs, VPR keys, and exchange information required by the `Validator` to accept issuer candidate as an `Issuer`. Requirements for process execution must be specified in the EGF (Ecosystem Governance Framework) of the Trust Registry controller.
+During the Validation Process, the `Applicant` must:
+
+- Prove ownership of their **DIDs** and **VPR keys**;
+- Provide any additional information required by the `Validator` to assess and accept the `Applicant` as an `Issuer`.
+
+The specific requirements and process execution rules must be defined within the **Ecosystem Governance Framework (EGF)** of the Ecosystem, the Trust Registry controller.
 
 Example of a permission tree where schema policy is set to GRANTOR_VALIDATION for issuance, and GRANTOR_VALIDATION for verification:
 
 {{< image "/img/validation-tree-td.png" "" "max-width: 800x;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 0.5em; " "max-width: 800px; text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 2.5em; padding: 0em; float: none; " >}}
 
-In this example:
+**In this example:**
 
-- An `Applicant` will need to pay 1,000 * (1 + TD)  = 1,200 TUs to run a validation process with `Issuer Grantor B` and get granted an Issuer Permission `Issuer C` for this Credential Schema of `Trust Registry A`.
-- Validation starts, fees paid by `Applicant` are escrowed.
-- `Applicant` connects to the Verifiable Service provided by `Validator` (the DID registered in the Validator’s Permission). They exchange information for completing the Validation process.
-- When Validation process completes, `Applicant` Permission is created, then fees are distributed.
+- An `Applicant` must pay **1,000 × (1 + TD) = 1,200 TUs** to initiate a validation process with `Issuer Grantor B`, in order to be granted the `Issuer C` permission for a specific Credential Schema governed by `Trust Registry A`.
+- Once validation begins, the fees paid by the `Applicant` are **escrowed**.
+- The `Applicant` connects to the **Verifiable Service** provided by the `Validator` (the DID registered in the Validator’s permission). They exchange the necessary information to complete the validation process.
+- Upon successful completion of the validation:
+  - The `Applicant` is granted the `Issuer` permission by the `Validator`.
+  - The escrowed fees are **released and distributed** according to the defined rules.
 
 {{< image "/img/vp-fees-distrib-issuer.png" "" "max-width: 800x;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 0.5em; " "max-width: 800px; text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 2.5em; padding: 0em; float: none; " >}}
 
-The validation fees are partially sent to specific participant(s), the remaining fees are sent to trust deposits or treated as normal network fees and distributed using the normal distribution principle of a distributed network.
+The validation fees are partially distributed to designated participant(s), such as the `Validator` or `Grantor`. The remaining portion is either allocated to **Trust Deposits** or treated as standard **network fees**, and distributed according to the network’s established fee distribution model.
 
 ### Pay per issued/verified credential
 
@@ -75,6 +83,11 @@ Fees involved and distributed, when a credential is verified:
 
 {{< image "/img/verifier-fee-distrib.svg" "" "max-width: 1200x;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 0.5em; " "max-width: 1200px; text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 2.5em; padding: 0em; float: none; " >}}
 
-**Payment enforcement**:
+**Payment Enforcement**:
 
-It is responsibility of the VSs and the VUAs to verify that issuer(s) or verifier(s) paid before accepting a new issued credential of an issuer, or before presenting a requested credential from a verifier.
+It is the responsibility of **Verifiable Services (VSs)** and **Verifiable User Agents (VUAs)** to verify that an `Issuer` or `Verifier` has paid the required fees **before**:
+
+- Accepting a newly issued credential from an `Issuer`, or  
+- Presenting a requested credential to a `Verifier`
+
+This ensures that only participants with valid, active permissions — backed by payment — are allowed to issue or request verifiable credentials.

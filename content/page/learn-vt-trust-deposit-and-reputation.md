@@ -37,6 +37,8 @@ The main purpose behind the Trust Deposit is making sure, for a given Ecosystem,
 | **Controlled by each Ecosystem** | An Ecosystem can only slash a participant the proportional amount linked to its activity on this Ecosystem|
 | **Non-custodial** | Held in a VPR on-chain, not controlled by any central authority.|
 
+{{< image "/img/verifiable-service.png" "Example of Trust Reputation." "max-width: 300px; border: 1px solid #DDDDDD; margin-top: 2.5em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 0.5em;" "text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 2.5em; padding: 0em; float: right; " >}}
+
 ### Slash
 
 Ecosystems define in their EGF (Ecosystem Governance Framework) the rules for being part of their Ecosystem, and what can happen if rules are not complied.
@@ -51,3 +53,6 @@ As information related to Network activity and Trust Deposit is public, a partic
 - for each Ecosystem it is taking part, its corresponding Trust Deposit history is visible by all other participants,
 - for each Ecosystem it is taking part, the number of issued and/or verified credentials is visible by all other participants,
 - dishonest or malicious activity, possibly sanctioned by Ecosystem with a slash, remind associated to the account owner forever.
+
+Information can be used to compute a number of stars.
+

@@ -63,9 +63,9 @@
     "name" : "Verana Foundation"
   },
   "headline": "Verifiable Trust Business Models",
-  "description" : "Business Models VPR spec defines two kind of business models:\nsubscription based business model, for being granted a Permission in the Credential Schema Permission tree. pay per issuance and pay per verification. Subscription based Validation Process Based on configured issuance and verification policies, if schema is not OPEN, to get granted a permission, an Applicant must run a Validation Process. Applicant starts the Validation Process by selecting an existing Validator Permission. Validation Process may require payment of fees, as defined by the Validator in its permission. Fees are usually charged using a yearly subscription which means applicant must renew its permission each year, else it expires.\n",
+  "description" : "Business Models VPR spec defines two kind of business models:\nsubscription based business model, for being granted a Permission in the Credential Schema Permission tree. pay per issuance and pay per verification. Subscription based Validation Process Based on the configured issuance and verification policies, if a schema is not marked as OPEN, an Applicant must complete a Validation Process to be granted a permission. The Applicant initiates this process by selecting an existing Validator permission. Each Validator defines its own terms, which may include the payment of fees. These fees are typically charged as a yearly subscription, requiring the Applicant to renew their permission annually. If the subscription is not renewed, the permission will expire automatically.\n",
   "inLanguage" : "en",
-  "wordCount":  569 ,
+  "wordCount":  649 ,
   "datePublished" : "2024-11-05T00:00:00\u002b02:00",
   "dateModified" : "2025-04-06T23:42:28-05:00",
   "image" : "http:\/\/localhost:1313\/img\/avatar-icon.png",
@@ -338,7 +338,7 @@
 <li>pay per issuance and pay per verification.</li>
 </ul>
 <h3 id="subscription-based-validation-process">Subscription based Validation Process</h3>
-<p>Based on configured issuance and verification policies, if schema is not OPEN, to get granted a permission, an <code>Applicant</code> must run a Validation Process. <code>Applicant</code> starts the Validation Process by selecting an existing <code>Validator</code> Permission. Validation Process may require payment of fees, as defined by the <code>Validator</code> in its permission. Fees are usually charged using a yearly subscription which means applicant must renew its permission each year, else it expires.</p>
+<p>Based on the configured issuance and verification policies, if a schema is not marked as <strong>OPEN</strong>, an <code>Applicant</code> must complete a <strong>Validation Process</strong> to be granted a permission. The <code>Applicant</code> initiates this process by selecting an existing <code>Validator</code> permission. Each <code>Validator</code> defines its own terms, which may include the payment of fees. These fees are typically charged as a <strong>yearly subscription</strong>, requiring the <code>Applicant</code> to renew their permission annually. If the subscription is not renewed, the permission will <strong>expire</strong> automatically.</p>
 <p>Fee Structure:</p>
 <table>
   <thead>
@@ -406,25 +406,36 @@
 <li>(3): if <em>issuer PermissionManagementMode</em> is set to TRUST_REGISTRY.</li>
 <li>(4): if <em>verifier PermissionManagementMode</em> is set to TRUST_REGISTRY.</li>
 </ul>
-<p>Example: If the <code>Applicant</code> would like to be an <code>Issuer</code> and the PermissionManagementMode is configured to GRANTOR_VALIDATION for credential issuance, then to be an Issuer, <code>Applicant</code> must run a Validation Process with an <code>Issuer Grantor</code> that will act as the <code>Validator</code>. If defined, issuer candidate will pay validation fees as defined in issuer grantor permission.</p>
-<p>During the Validation Process <code>Applicant</code> will prove ownership of DIDs, VPR keys, and exchange information required by the <code>Validator</code> to accept issuer candidate as an <code>Issuer</code>. Requirements for process execution must be specified in the EGF (Ecosystem Governance Framework) of the Trust Registry controller.</p>
+<p><strong>Example</strong>: If an <code>Applicant</code> wishes to become an <code>Issuer</code>, and the <code>PermissionManagementMode</code> for credential issuance is configured as <code>GRANTOR_VALIDATION</code>, the <code>Applicant</code> must undergo a <strong>Validation Process</strong> with an <code>Issuer Grantor</code>, who will serve as the <code>Validator</code>.</p>
+<p>If defined, the <code>Applicant</code> is required to pay validation fees, as specified in the <code>Issuer Grantor</code>&rsquo;s permission configuration.</p>
+<p>During the Validation Process, the <code>Applicant</code> must:</p>
+<ul>
+<li>Prove ownership of their <strong>DIDs</strong> and <strong>VPR keys</strong>;</li>
+<li>Provide any additional information required by the <code>Validator</code> to assess and accept the <code>Applicant</code> as an <code>Issuer</code>.</li>
+</ul>
+<p>The specific requirements and process execution rules must be defined within the <strong>Ecosystem Governance Framework (EGF)</strong> of the Ecosystem, the Trust Registry controller.</p>
 <p>Example of a permission tree where schema policy is set to GRANTOR_VALIDATION for issuance, and GRANTOR_VALIDATION for verification:</p>
 <figure  style="max-width: 800px; text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 2.5em; padding: 0em; float: none; "  >
     <img src="/img/validation-tree-td.png" alt="" style="max-width: 800x;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 0.5em; " >
     <figcaption></figcaption>
   </figure>  
-<p>In this example:</p>
+<p><strong>In this example:</strong></p>
 <ul>
-<li>An <code>Applicant</code> will need to pay 1,000 * (1 + TD)  = 1,200 TUs to run a validation process with <code>Issuer Grantor B</code> and get granted an Issuer Permission <code>Issuer C</code> for this Credential Schema of <code>Trust Registry A</code>.</li>
-<li>Validation starts, fees paid by <code>Applicant</code> are escrowed.</li>
-<li><code>Applicant</code> connects to the Verifiable Service provided by <code>Validator</code> (the DID registered in the Validator’s Permission). They exchange information for completing the Validation process.</li>
-<li>When Validation process completes, <code>Applicant</code> Permission is created, then fees are distributed.</li>
+<li>An <code>Applicant</code> must pay <strong>1,000 × (1 + TD) = 1,200 TUs</strong> to initiate a validation process with <code>Issuer Grantor B</code>, in order to be granted the <code>Issuer C</code> permission for a specific Credential Schema governed by <code>Trust Registry A</code>.</li>
+<li>Once validation begins, the fees paid by the <code>Applicant</code> are <strong>escrowed</strong>.</li>
+<li>The <code>Applicant</code> connects to the <strong>Verifiable Service</strong> provided by the <code>Validator</code> (the DID registered in the Validator’s permission). They exchange the necessary information to complete the validation process.</li>
+<li>Upon successful completion of the validation:
+<ul>
+<li>The <code>Applicant</code> is granted the <code>Issuer</code> permission by the <code>Validator</code>.</li>
+<li>The escrowed fees are <strong>released and distributed</strong> according to the defined rules.</li>
+</ul>
+</li>
 </ul>
 <figure  style="max-width: 800px; text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 2.5em; padding: 0em; float: none; "  >
     <img src="/img/vp-fees-distrib-issuer.png" alt="" style="max-width: 800x;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 0.5em; " >
     <figcaption></figcaption>
   </figure>  
-<p>The validation fees are partially sent to specific participant(s), the remaining fees are sent to trust deposits or treated as normal network fees and distributed using the normal distribution principle of a distributed network.</p>
+<p>The validation fees are partially distributed to designated participant(s), such as the <code>Validator</code> or <code>Grantor</code>. The remaining portion is either allocated to <strong>Trust Deposits</strong> or treated as standard <strong>network fees</strong>, and distributed according to the network’s established fee distribution model.</p>
 <h3 id="pay-per-issuedverified-credential">Pay per issued/verified credential</h3>
 <p>Added to the validation fees, granted Permissions may indicate that some fees must be paid when issuing or verifying (presentation request) a Verifiable Credential of a given schema.</p>
 <p>Example:</p>
@@ -448,8 +459,13 @@
     <img src="/img/verifier-fee-distrib.svg" alt="" style="max-width: 1200x;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 0.5em; " >
     <figcaption></figcaption>
   </figure>  
-<p><strong>Payment enforcement</strong>:</p>
-<p>It is responsibility of the VSs and the VUAs to verify that issuer(s) or verifier(s) paid before accepting a new issued credential of an issuer, or before presenting a requested credential from a verifier.</p>
+<p><strong>Payment Enforcement</strong>:</p>
+<p>It is the responsibility of <strong>Verifiable Services (VSs)</strong> and <strong>Verifiable User Agents (VUAs)</strong> to verify that an <code>Issuer</code> or <code>Verifier</code> has paid the required fees <strong>before</strong>:</p>
+<ul>
+<li>Accepting a newly issued credential from an <code>Issuer</code>, or</li>
+<li>Presenting a requested credential to a <code>Verifier</code></li>
+</ul>
+<p>This ensures that only participants with valid, active permissions — backed by payment — are allowed to issue or request verifiable credentials.</p>
 
 
         
