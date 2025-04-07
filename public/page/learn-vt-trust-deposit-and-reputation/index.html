@@ -63,9 +63,9 @@
     "name" : "Verana Foundation"
   },
   "headline": "Reputation and Trust Deposit",
-  "description" : "Trust Deposit",
+  "description" : "What is a Trust Deposit? A Trust Deposit is a stake in a VPR network that any participant automatically grows when using the network. Each participant has its own Trust Deposit.\nExecution of a Validation Process grows the Trust Deposit of both the Applicant and the Validator. When issuing or verifying a credential, if pay per issuance and\/or pay per verification is enabled by the Ecosystem, then Trust Deposit of all involved participants in the Permission Tree increase each time a credential is issued and\/or verified. If applicable, involved User Agent Owner and Wallet User Agent Owner Trust Deposit increases as well. Registering or renewing a DID in the Service Directory grows the Trust Deposit of the participant executing the transaction. We can see the Trust Deposit as a percentage deduction that is executed to all circulating trust fees. Example with Verification Fees - as explained in Business Models:\n",
   "inLanguage" : "en",
-  "wordCount":  2 ,
+  "wordCount":  336 ,
   "datePublished" : "2024-11-05T00:00:00\u002b02:00",
   "dateModified" : "2025-04-06T23:42:28-05:00",
   "image" : "http:\/\/localhost:1313\/img\/avatar-icon.png",
@@ -331,7 +331,65 @@
   <div class="row">
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
-        <h2 id="trust-deposit">Trust Deposit</h2>
+        <h2 id="what-is-a-trust-deposit">What is a Trust Deposit?</h2>
+<p>A Trust Deposit is a stake in a VPR network that any participant automatically grows when using the network. Each participant has its own Trust Deposit.</p>
+<ul>
+<li>Execution of a Validation Process grows the Trust Deposit of both the <code>Applicant</code> and the <code>Validator</code>.</li>
+<li>When issuing or verifying a credential, if pay per issuance and/or pay per verification is enabled by the Ecosystem, then Trust Deposit of all involved participants in the Permission Tree increase each time a credential is issued and/or verified. If applicable, involved <code>User Agent Owner</code> and <code>Wallet User Agent Owner</code> Trust Deposit increases as well.</li>
+<li>Registering or renewing a DID in the Service Directory grows the Trust Deposit of the participant executing the transaction.</li>
+</ul>
+<p>We can see the Trust Deposit as a percentage deduction that is executed to all circulating trust fees. Example with Verification Fees - as explained in <a href="/page/learn-vt-business-models.md">Business Models</a>:</p>
+<figure  style="max-width: 1200px; text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 2.5em; padding: 0em; float: none; "  >
+    <img src="/img/verifier-fee-distrib.svg" alt="" style="max-width: 1200x;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 0.5em; " >
+    <figcaption></figcaption>
+  </figure>  
+<ul>
+<li>
+<p>Each time fees are charged, a 20% is added and sent to the Trust Deposit of the participant executing the transaction, and corresponding amount is associated to the Permission that permitted the transaction.</p>
+</li>
+<li>
+<p>When fees are distributed to other participants, 20% is deduced and sent to their Trust Deposit, while the other 80% are liquid and immediately available.</p>
+</li>
+<li>
+<p>The percentage (here 20%) sent to Trust Deposit is defined by the VPR controller.</p>
+</li>
+</ul>
+<h3 id="core-purposes">Core Purposes</h3>
+<p>The main purpose behind the Trust Deposit is making sure, for a given Ecosystem, that its participants will respect the Ecosystem Governance Framework.</p>
+<table>
+  <thead>
+      <tr>
+          <th><strong>Purpose</strong></th>
+          <th><strong>Description</strong></th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td><strong>Incentivize Good Behavior</strong></td>
+          <td>Entities risk losing their deposit if they act dishonestly or maliciously.</td>
+      </tr>
+      <tr>
+          <td><strong>Signal Serious Intent</strong></td>
+          <td>Requires &ldquo;skin in the game&rdquo; to filter out spam or low-effort actors.</td>
+      </tr>
+      <tr>
+          <td><strong>Enable Slashing</strong></td>
+          <td>Deposits can be slashed if governance rules or trust policies are violated.</td>
+      </tr>
+      <tr>
+          <td><strong>Support Decentralized Governance</strong></td>
+          <td>Forms the economic foundation for role assignment and revocation.</td>
+      </tr>
+      <tr>
+          <td><strong>Controlled by each Ecosystem</strong></td>
+          <td>An Ecosystem can only slash a participant the proportional amount linked to its activity on this Ecosystem</td>
+      </tr>
+      <tr>
+          <td><strong>Non-custodial</strong></td>
+          <td>Held in a VPR on-chain, not controlled by any central authority.</td>
+      </tr>
+  </tbody>
+</table>
 
 
         

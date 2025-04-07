@@ -63,9 +63,9 @@
     "name" : "Verana Foundation"
   },
   "headline": "Service Directory and Search Engine",
-  "description" : "Service Directory The Service Directory is a public database of DIDs that can be used by crawlers to index the metadata of the VS provided by these DIDs.\nSearch engines simply need to iterate over the Service Directory and index VSs based on VS metadata (DID Document, presented credentials,…) For example, the Service directory is essential to Verifiable User Agents (VUAs), such as social browsers, cdn browsers,… but can although be used by a general classic form-based search engine that would return simple link(s) for accessing VSs.\n",
+  "description" : "Service Directory What is the Service Directory? The Service Directory is a public database of DIDs maintained in a VPR, that can be used by crawlers to index the metadata of the VS provided by these DIDs.\nSearch engines simply need to iterate over the Service Directory and index VSs based on VS metadata (DID Document, presented credentials,…) For example, the Service directory is essential to Verifiable User Agents (VUAs), such as social browsers, cdn browsers,… but can although be used by a general classic form-based search engine that would return simple link(s) for accessing VSs.\n",
   "inLanguage" : "en",
-  "wordCount":  146 ,
+  "wordCount":  161 ,
   "datePublished" : "2024-11-05T00:00:00\u002b02:00",
   "dateModified" : "2025-04-06T23:42:28-05:00",
   "image" : "http:\/\/localhost:1313\/img\/avatar-icon.png",
@@ -332,19 +332,21 @@
     <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
       <article role="main" class="blog-post">
         <h2 id="service-directory">Service Directory</h2>
-<p>The Service Directory is a public database of <a href="https://www.w3.org/TR/did-1.0/">DIDs</a> that can be used by crawlers to index the metadata of the VS provided by these DIDs.</p>
+<h3 id="what-is-the-service-directory">What is the Service Directory?</h3>
+<p>The Service Directory is a public database of <a href="https://www.w3.org/TR/did-1.0/">DIDs</a> maintained in a VPR, that can be used by crawlers to index the metadata of the VS provided by these DIDs.</p>
 <p>Search engines simply need to iterate over the Service Directory and index VSs based on VS metadata (DID Document, presented credentials,…) For example, the Service directory is essential to Verifiable User Agents (VUAs), such as social browsers, cdn browsers,… but can although be used by a general classic form-based search engine that would return simple link(s) for accessing VSs.</p>
 <p>Any participant can register a DID in the DID directory by executing a transaction in a VPR.</p>
 <figure  style="max-width: 800px; text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 2.5em; padding: 0em; float: none; "  >
     <img src="/img/diddirindex.svg" alt="" style="max-width: 800px;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 0.5em; " >
     <figcaption></figcaption>
   </figure>  
+<h3 id="search-the-service-directory">Search the Service Directory</h3>
 <p>Indexer can be run as a container with a locally deployed VPR node. It is then easy to deploy the search engine and provide a fancy familiar prompt:</p>
 <figure  style="max-width: 800px; text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 2.5em; padding: 0em; float: none; "  >
     <img src="/img/verana-search.png" alt="" style="max-width: 800px;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 0.5em; " >
     <figcaption></figcaption>
   </figure>  
-<p>The only <strong>big</strong> difference here is that results are not biased nor manipulated 😀</p>
+<p><strong>Great to know</strong>: results are not biased nor manipulated 😀, because they rely on verifiable data.</p>
 
 
         
