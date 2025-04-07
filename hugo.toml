@@ -99,7 +99,7 @@ pygmentsCodefencesGuessSyntax = true
     parent = "Learn"
 
 [[menu.main]]
-    name = "Reputation and Trust Deposit"
+    name = "Trust Deposit & Reputation"
     url = "page/learn-vt-trust-deposit-and-reputation/"
     weight = 35
     parent = "Learn"

@@ -1,5 +1,5 @@
 ---
-title: Reputation and Trust Deposit
+title: Trust Deposit and Reputation
 date: 2024-11-05T00:00:00+02:00
 subtitle: "It takes time to build a reputation."
 comments: false
