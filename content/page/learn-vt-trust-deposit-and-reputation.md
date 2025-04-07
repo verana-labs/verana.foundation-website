@@ -6,7 +6,7 @@ comments: false
 bigimg: [{src: "/img/triangle.jpg"}, {src: "/img/sphere.jpg"}, {src: "/img/hexagon.jpg"}]
 ---
 
-## What is a Trust Deposit?
+## Trust Deposit
 
 A Trust Deposit is a stake in a VPR network that any participant automatically grows when using the network. Each participant has its own Trust Deposit.
 
@@ -36,3 +36,18 @@ The main purpose behind the Trust Deposit is making sure, for a given Ecosystem,
 | **Support Decentralized Governance** | Forms the economic foundation for role assignment and revocation.         |
 | **Controlled by each Ecosystem** | An Ecosystem can only slash a participant the proportional amount linked to its activity on this Ecosystem|
 | **Non-custodial** | Held in a VPR on-chain, not controlled by any central authority.|
+
+### Slash
+
+Ecosystems define in their EGF (Ecosystem Governance Framework) the rules for being part of their Ecosystem, and what can happen if rules are not complied.
+
+When an Ecosystem participant is slashed, its activity is blocked until the slashed Trust Deposit is paid back by slashed participant.
+
+### Trust Deposit Based Reputation
+
+As information related to Network activity and Trust Deposit is public, a participant will build a digital trust reputation over time:
+
+- its Trust Deposit will grow,
+- for each Ecosystem it is taking part, its corresponding Trust Deposit history is visible by all other participants,
+- for each Ecosystem it is taking part, the number of issued and/or verified credentials is visible by all other participants,
+- dishonest or malicious activity, possibly sanctioned by Ecosystem with a slash, remind associated to the account owner forever.
