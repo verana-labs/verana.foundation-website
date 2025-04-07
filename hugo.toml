@@ -110,13 +110,15 @@ pygmentsCodefencesGuessSyntax = true
     weight = 40
     parent = "Learn"
 
-
-
+[[menu.main]]
+    name = "Ecosystem"
+    url = "page/ecosystem/"
+    weight = 5
 
 [[menu.main]]
-    name = "Governance"
-    url = "page/governance/"
-    weight = 5
+    name = "Network"
+    url = "page/network/"
+    weight = 7
 
 [[menu.main]]
     name = "FAQ"
