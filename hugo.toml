@@ -113,6 +113,13 @@ pygmentsCodefencesGuessSyntax = true
     parent = "Learn"
 
 [[menu.main]]
+    name = "Use Cases"
+    url = "page/learn-vt-usecases/"
+    weight = 45
+    parent = "Learn"
+
+
+[[menu.main]]
     name = "Deliverables"
     url = "page/deliverables/"
     weight = 4
