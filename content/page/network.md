@@ -42,30 +42,28 @@ By doing so, Verana provides the trust anchor needed for decentralized applicati
 
 ## Call to existing ecosystems, foundations and the identity industry
 
-The Verana Foundation is a non profit organization.
+The Verana Foundation is a nonprofit organization dedicated to the development and governance of open, decentralized trust infrastructure.
 
-As the **Verana Verifiable Trust Network** is a public good and include a crypto token (**VNA**) as the fuel for trust fees, **mainnet** launch will be done by involving all volunteer contributors. To make the network as decentralized as possible, the VNA token total supply will be fairly distributed including all project contributors, provided they demonstrate their fair involvement in this project and their adherence to the mission of the Verana Foundation.
+As the **Verana Verifiable Trust Network** is designed as a **public good**, its mainnet launch will include the introduction of the **VNA token**, which powers trust-related fees and operations across the network. In alignment with the Foundation’s mission of decentralization and transparency, the VNA token’s total supply will be **fairly distributed** among all contributors who have meaningfully supported the project and demonstrated alignment with its values.
 
-Example of contributors (unordered) that qualify for token distribution at launch:
+To ensure a decentralized and community-driven network from day one, token distribution at launch will include a broad range of stakeholders. Eligible contributors (unordered) may include:
 
-- Verana Foundation members
-- Github Repository contributors
-- Governance advocates
-- Legal contributors
-- Implementation of the Verifiable Trust layer in existing ecosystem projects: wallets, IDP software and services, etc
-- Verana Foundation Ambassadors
-- network validators (Entities that host Verana Verifiable Trust Network nodes as network validators)
-- VCs
-- Early adopters
-- Essential Credential Schema (ECS) Issuers
-- Community managers
+- Members of the Verana Foundation  
+- Contributors to GitHub repositories  
+- Governance advocates and working group participants  
+- Legal and compliance advisors  
+- Builders integrating the Verifiable Trust layer into wallets, IDPs, or ecosystem services  
+- Verana Foundation Ambassadors  
+- **Network Validators** (entities running validator nodes for the Verana Verifiable Trust Network)  
+- Verifiable Credential experts and early adopters  
+- **Essential Credential Schema (ECS) Issuers**  
+- Community managers and moderators  
+- Early-stage ecosystem partners and aligned VCs
 
-Distributed amounts and vesting periods will depends on contribution start date and other criteria that are currently being defined - we'll keep the community updated.
+**Token distribution amounts and vesting periods** will depend on factors such as the contributor’s start date, type and level of involvement, and other criteria currently being finalized. The Verana Foundation is committed to transparency and will keep the community informed as token allocation guidelines and governance processes evolve.
 
 ## Mainnet launch
 
 The launch of the **Verana Verifiable Trust Network**, the first public, decentralized and verifiable trust network, is currently scheduled for **Q1/2026**.
-
-
 
 EOF
