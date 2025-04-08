@@ -1,6 +1,6 @@
 ---
 title: Verifiable Trust demystified
-date: 2024-11-05T00:00:00+02:00
+date: 2025-04-01T00:00:00+02:00
 subtitle: "Intro to Verifiable Trust, Proof-of-Trust, Deep Dive into Verifiable Trust and Business Models "
 comments: false
 bigimg: [{src: "/img/triangle.jpg"}, {src: "/img/sphere.jpg"}, {src: "/img/hexagon.jpg"}]

@@ -21,8 +21,8 @@ pygmentsCodefencesGuessSyntax = true
 
 [Params]
   commit = "https://github.com/verana-labs/verana.foundation-website/tree/"
-#  homeTitle = "Beautiful Hugo Theme" # Set a different text for the header on the home page
-  subtitle = "Build a beautiful and simple website in minutes"
+  homeTitle = "Verana Foundation" # Set a different text for the header on the home page
+  subtitle = "To empower digital trust and privacy by developing open standards, decentralized infrastructure, and transparent governance frameworks that enable secure, verifiable, and user-controlled interactions across the digital world"
   mainSections = ["post","posts"]
   logo = "img/avatar-icon.png" # Expecting square dimensions
   favicon = "img/favicon.ico"
@@ -40,16 +40,16 @@ pygmentsCodefencesGuessSyntax = true
 #  gcse = "012345678901234567890:abcdefghijk" # Get your code from google.com/cse. Make sure to go to "Look and Feel" and change Layout to "Full Width" and Theme to "Classic"
 #  disclaimerText = "The opinions expressed herein are my own personal opinions and do not represent my employer’s view in any way."
 
-#[[Params.bigimg]]
-#  src = "img/triangle.jpg"
+[[Params.bigimg]]
+  src = "img/triangle.jpg"
 #  desc = "Triangle"
-#[[Params.bigimg]]
-#  src = "img/sphere.jpg"
+[[Params.bigimg]]
+  src = "img/sphere.jpg"
 #  desc = "Sphere"
 #  # position: see values of CSS background-position.
 #  position = "center top"
-#[[Params.bigimg]]
-#  src = "img/hexagon.jpg"
+[[Params.bigimg]]
+  src = "img/hexagon.jpg"
 #  desc = "Hexagon"
 
 [Params.author]
@@ -66,13 +66,9 @@ pygmentsCodefencesGuessSyntax = true
 
 [[menu.main]]
     name = "Home"
-    url = "page/home/"
+    url = ""
     weight = 1
 
-[[menu.main]]
-    name = "Deliverables"
-    url = "page/deliverables/"
-    weight = 2
 
 
 [[menu.main]]
@@ -105,27 +101,23 @@ pygmentsCodefencesGuessSyntax = true
     parent = "Learn"
 
 [[menu.main]]
+    name = "Essential Credential Schemas"
+    url = "page/learn-vt-essential-credential-schemas/"
+    weight = 37
+    parent = "Learn"
+
+[[menu.main]]
     name = "Service Directory and Search Engine"
     url = "page/learn-vt-service-directory/"
     weight = 40
     parent = "Learn"
 
 [[menu.main]]
-    name = "Ecosystem"
-    url = "page/ecosystem/"
-    weight = 5
+    name = "Deliverables"
+    url = "page/deliverables/"
+    weight = 4
 
 [[menu.main]]
     name = "Network"
     url = "page/network/"
     weight = 7
-
-[[menu.main]]
-    name = "FAQ"
-    url = "page/faq/"
-    weight = 10
-
-[[menu.main]]
-    name = "Blog"
-    url = "post/"
-    weight = 15

@@ -1,6 +1,6 @@
 ---
 title: Service Directory and Search Engine
-date: 2024-11-05T00:00:00+02:00
+date: 2025-04-01T00:00:00+02:00
 subtitle: "Register your Verifiable Service in a Service Directory, and let users find you. Instantly."
 comments: false
 bigimg: [{src: "/img/triangle.jpg"}, {src: "/img/sphere.jpg"}, {src: "/img/hexagon.jpg"}]

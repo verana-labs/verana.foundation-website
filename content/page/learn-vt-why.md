@@ -1,6 +1,6 @@
 ---
 title: Why we need Verifiable Trust
-date: 2024-11-05T00:00:00+02:00
+date: 2025-04-01T00:00:00+02:00
 subtitle: There’s no reliable way to verify the identity of either service providers or users. This leaves the door wide open to spam, phishing, fraud, and identity theft.
 comments: false
 bigimg: [{src: "/img/triangle.jpg"}, {src: "/img/sphere.jpg"}, {src: "/img/hexagon.jpg"}]

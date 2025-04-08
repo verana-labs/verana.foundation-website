@@ -1,6 +1,6 @@
 ---
 title: Trust Resolution explained
-date: 2024-11-05T00:00:00+02:00
+date: 2025-04-01T00:00:00+02:00
 subtitle: "Proof-of-Trust, decentralized services, credential based business models where all participants are rewarded, transparent service directory with unbiased search results: welcome to the future"
 comments: false
 bigimg: [{src: "/img/triangle.jpg"}, {src: "/img/sphere.jpg"}, {src: "/img/hexagon.jpg"}]

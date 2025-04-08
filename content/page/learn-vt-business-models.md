@@ -1,6 +1,6 @@
 ---
 title: Verifiable Trust Business Models
-date: 2024-11-05T00:00:00+02:00
+date: 2025-04-01T00:00:00+02:00
 subtitle: "Subscription Business Model for Credential Schema Permissions, *Privacy-preserving* pay per issuance and pay per verification for credentials"
 comments: false
 bigimg: [{src: "/img/triangle.jpg"}, {src: "/img/sphere.jpg"}, {src: "/img/hexagon.jpg"}]
