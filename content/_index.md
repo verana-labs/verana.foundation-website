@@ -22,9 +22,4 @@ As the steward of Essential Credential Schemas (ECS), the Verana Foundation not 
 - [Fabrice Rochette](https://www.linkedin.com/in/fabricerochette/) - CEO & Co-founder at 2060.io
 - [Ariel Gentile](https://www.linkedin.com/in/aogentile/) - CTO & Co-founder at 2060.io
 - [Mathieu Gauthron](https://www.linkedin.com/in/mathieugauthron/) - Head of the Verana Network at the Verana Foundation
-
-## Ambassadors
-
-- [David Rennie](https://www.linkedin.com/in/david-rennie-b736541/) - Digital Identity & Data Assurance Specialist
-- [Richard Butlewski](https://www.linkedin.com/in/richard-butlewski-699204/) - Senior Sales and Business Development team manager at Idemia
-- [David Carrasco Zanini](https://www.linkedin.com/in/david-carrasco-zanini-p-7719389b/) - CEO at Alcani
+- [David Carrasco Zanini](https://www.linkedin.com/in/david-carrasco-zanini-p-7719389b/) - CEO at [Totalnot](https://www.totalnot.mx/)
