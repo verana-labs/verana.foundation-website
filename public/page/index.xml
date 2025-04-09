@@ -6,7 +6,7 @@
     <description>Recent content in Pages on Verana Foundation</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 08 Apr 2025 11:00:45 -0700</lastBuildDate>
+    <lastBuildDate>Wed, 09 Apr 2025 14:51:10 -0700</lastBuildDate>
     <atom:link href="http://localhost:1313/page/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Donate</title>
@@ -34,7 +34,7 @@
       <link>http://localhost:1313/page/demos/</link>
       <pubDate>Tue, 01 Apr 2025 00:00:00 +0200</pubDate>
       <guid>http://localhost:1313/page/demos/</guid>
-      <description>&lt;h2 id=&#34;verifiable-trust-in-action&#34;&gt;Verifiable Trust in action&lt;/h2&gt;&#xA;&lt;h3 id=&#34;hologram-messaging&#34;&gt;Hologram Messaging&lt;/h3&gt;&#xA;&lt;figure  style=&#34;text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 2.5em; padding: 0em; float: right; &#34;  &gt;&#xA;    &lt;img src=&#34;http://localhost:1313/img/hologram-qr.png&#34; alt=&#34;Get Hologram&#34; style=&#34;max-width: 200px; border: 1px solid #DDDDDD; margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 0.5em;&#34; &gt;&#xA;    &lt;figcaption&gt;Get Hologram&lt;/figcaption&gt;&#xA;  &lt;/figure&gt;  &#xA;&lt;p&gt;For these demonstrations, we&amp;rsquo;ll begin by downloading &lt;a href=&#34;https://hologram.zone&#34;&gt;Hologram Messaging&lt;/a&gt;, a private messaging mobile application that functions as a &lt;strong&gt;Verifiable User Agent (VUA)&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;You can find the app on your device&amp;rsquo;s app store or scan the QR code provided to get started.&lt;/p&gt;</description>
+      <description>&lt;h2 id=&#34;verifiable-trust-in-action&#34;&gt;Verifiable Trust in action&lt;/h2&gt;&#xA;&lt;h3 id=&#34;hologram-messaging&#34;&gt;Hologram Messaging&lt;/h3&gt;&#xA;&lt;figure  style=&#34;text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 2.5em; padding: 0em; float: right; &#34;  &gt;&#xA;    &lt;img src=&#34;http://localhost:1313/img/hologram-qr.png&#34; alt=&#34;&#34; style=&#34;max-width: 400px; border: 1px solid #DDDDDD; margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 0.5em;&#34; &gt;&#xA;    &lt;figcaption&gt;&lt;/figcaption&gt;&#xA;  &lt;/figure&gt;  &#xA;&lt;p&gt;For these demonstrations, we&amp;rsquo;ll begin by downloading &lt;a href=&#34;https://hologram.zone&#34;&gt;Hologram Messaging&lt;/a&gt;, a private messaging mobile application that functions as a &lt;strong&gt;Verifiable User Agent (VUA)&lt;/strong&gt;.&lt;/p&gt;&#xA;&lt;p&gt;You can find the app on your device&amp;rsquo;s app store or scan the QR code provided to get started.&lt;/p&gt;</description>
     </item>
     <item>
       <title>The Verana Verifiable Trust Network</title>
