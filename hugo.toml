@@ -128,3 +128,8 @@ pygmentsCodefencesGuessSyntax = true
     name = "Network"
     url = "page/network/"
     weight = 7
+
+[[menu.main]]
+    name = "Demos"
+    url = "page/demos/"
+    weight = 20
