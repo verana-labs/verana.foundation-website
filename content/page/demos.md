@@ -11,7 +11,7 @@ bigimg: [{src: "/img/triangle.jpg"}, {src: "/img/sphere.jpg"}, {src: "/img/hexag
 
 ### Hologram Messaging
 
-{{< image "/img/hologram-qr.png" "" "max-width: 300px; border: 1px solid #DDDDDD; margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 0.5em;" "text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 2.5em; padding: 0em; float: right; " >}}
+{{< image "/img/hologram-qr.png" "" "max-width: 400px; border: 1px solid #DDDDDD; margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 0.5em;" "text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 2.5em; padding: 0em; float: right; " >}}
 
 For these demonstrations, we'll begin by downloading [Hologram Messaging](https://hologram.zone), a private messaging mobile application that functions as a **Verifiable User Agent (VUA)**.
 
