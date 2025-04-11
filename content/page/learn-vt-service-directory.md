@@ -22,8 +22,8 @@ Any participant can register a DID in the Service Directory by submitting a tran
 
 ### Search the Service Directory
 
-Indexer can be run as a container with a locally deployed VPR node. It is then easy to deploy the search engine and provide a fancy familiar prompt:
+Indexer can be run as a container with a locally deployed VPR node for total **unlinkability**. It is then easy to deploy the search engine and provide a fancy familiar prompt:
 
 {{< image "/img/verana-search.png" "" "max-width: 800px;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 0.5em; " "max-width: 800px; text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 0em; margin-bottom: 0.5em; margin-right: 0em; margin-left: 2.5em; padding: 0em; float: none; " >}}
 
-**Great to know**: results are not biased nor manipulated 😀, because they rely on verifiable data.
+**Great to know**: results are not biased nor manipulable 😀, because **they rely on verifiable data**.
