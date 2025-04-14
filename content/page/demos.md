@@ -2,7 +2,7 @@
 title: Demos
 date: 2025-04-01T00:00:00+02:00
 weight: 15
-subtitle: Verifible Trust in action
+subtitle: Verifiable Trust in action
 comments: false
 bigimg: [{src: "/img/triangle.jpg"}, {src: "/img/sphere.jpg"}, {src: "/img/hexagon.jpg"}]
 ---
