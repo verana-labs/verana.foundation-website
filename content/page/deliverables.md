@@ -10,8 +10,8 @@ bigimg: [{src: "/img/triangle.jpg"}, {src: "/img/sphere.jpg"}, {src: "/img/hexag
 
 | type | item | status |
 |------|--------|------|
-| 🆔 | [Verifiable Trust Specification](https://verana-labs.github.io/verifiable-trust-spec/) | v1 |
-| 🔗 | [Verifiable Public Registry Specification](https://verana-labs.github.io/verifiable-trust-vpr-spec/) | v1 |
+| 🆔 | [Verifiable Trust Specification](https://verana-labs.github.io/verifiable-trust-spec/) | v2 |
+| 🔗 | [Verifiable Public Registry Specification](https://verana-labs.github.io/verifiable-trust-vpr-spec/) | v2 |
 
 ### Open source Software
 

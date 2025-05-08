@@ -16,7 +16,7 @@ On the service side, each provider imposes its own fragmented registration proce
 
 Although the World Wide Web was originally built for openness and interoperability, dominant players have reshaped it into a closed, centralized system that most people and organizations now depend on. Privacy has become an afterthought, and personal data is routinely harvested, exploited, or leaked.
 
-To rebuild a trustworthy internet, we need new communication channels — channels that are secure by design, based on mutual verification, and governed by decentralized trust. 
+To rebuild a trustworthy internet, we need new communication channels — channels that are secure by design, based on mutual verification, and governed by decentralized trust.
 
 Connecting to a service, proving who you are, or creating an account should be as simple and safe as presenting a verifiable credential.
 
