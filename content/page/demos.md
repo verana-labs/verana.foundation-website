@@ -58,37 +58,37 @@ You can build **Verifiable Service Chatbots** using our open-source templates, w
 
 #### Demo #1: Get Issued a Demo Identity Verifiable Credential from Your Passport
 
-Open the [UnicID ISSUER demo QR code](https://unic-id-issuer.demos.dev.2060.io/invitation) and scan it using the **Hologram Messaging App**.
+Open the [GovID ISSUER demo QR code](https://dm.gov-id-issuer.demos.2060.io/invitation) and scan it using the **Hologram Messaging App**.
 
 1. You’ll first see a **Proof-of-Trust**, allowing you to verify the identity of the **service provider** before proceeding.
 2. Accept the connection and follow the instructions to generate your **Identity Credential**.
    > 🔒 *Note: This demo reads your Passport or ID Card via NFC, but no personal data is stored on our servers. The data is processed only to generate the credential and is never retained.*
 3. Perform a **liveness check with facial matching** to prove that you are the same person represented in the identity document.
-4. Receive and store your **UnicID demo credential** securely in the Hologram app.
+4. Receive and store your **GovID demo credential** securely in the Hologram app.
 
-{{< image "/img/unic1.png" "Proof-of-Trust" "max-width: 200px; border: 1px solid #DDDDDD; margin-top: 0em; margin-bottom: 0.0em; margin-right: 0em; margin-left: 0.0em;" "text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 1em; margin-bottom: 1em; margin-right: 0.5em; margin-left: 0.5em; padding: 0em; float: left; " >}}
+{{< image "/img/govid-1.jpeg" "Proof-of-Trust" "max-width: 200px; border: 1px solid #DDDDDD; margin-top: 0em; margin-bottom: 0.0em; margin-right: 0em; margin-left: 0.0em;" "text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 1em; margin-bottom: 1em; margin-right: 0.5em; margin-left: 0.5em; padding: 0em; float: left; " >}}
 
-{{< image "/img/unic2.jpeg" "Step #1" "max-width: 200px; border: 1px solid #DDDDDD; margin-top: 0em; margin-bottom: 0.0em; margin-right: 0em; margin-left: 0.0em;" "text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 1em; margin-bottom: 1em; margin-right: 0.5em; margin-left: 0.5em; padding: 0em; float: left; " >}}
+{{< image "/img/govid-2.jpeg" "Step #1" "max-width: 200px; border: 1px solid #DDDDDD; margin-top: 0em; margin-bottom: 0.0em; margin-right: 0em; margin-left: 0.0em;" "text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 1em; margin-bottom: 1em; margin-right: 0.5em; margin-left: 0.5em; padding: 0em; float: left; " >}}
 
-{{< image "/img/unic3.jpeg" "Step #2" "max-width: 200px; border: 1px solid #DDDDDD; margin-top: 0em; margin-bottom: 0.0em; margin-right: 0em; margin-left: 0.0em;" "text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 1em; margin-bottom: 1em; margin-right: 0.5em; margin-left: 0.5em; padding: 0em; float: left; " >}}
+{{< image "/img/govid-3.jpg" "Step #2" "max-width: 200px; border: 1px solid #DDDDDD; margin-top: 0em; margin-bottom: 0.0em; margin-right: 0em; margin-left: 0.0em;" "text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 1em; margin-bottom: 1em; margin-right: 0.5em; margin-left: 0.5em; padding: 0em; float: left; " >}}
 
-{{< image "/img/unic4.jpeg" "Step #3" "max-width: 200px; border: 1px solid #DDDDDD; margin-top: 0em; margin-bottom: 0.0em; margin-right: 0em; margin-left: 0.0em;" "text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 1em; margin-bottom: 1em; margin-right: 0.5em; margin-left: 0.5em; padding: 0em; float: left; " >}}
+{{< image "/img/govid-4.jpeg" "Step #3" "max-width: 200px; border: 1px solid #DDDDDD; margin-top: 0em; margin-bottom: 0.0em; margin-right: 0em; margin-left: 0.0em;" "text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 1em; margin-bottom: 1em; margin-right: 0.5em; margin-left: 0.5em; padding: 0em; float: left; " >}}
 
-{{< image "/img/unic5.png" "Step #4" "max-width: 200px; border: 1px solid #DDDDDD; margin-top: 0em; margin-bottom: 0.0em; margin-right: 0em; margin-left: 0.0em;" "text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 1em; margin-bottom: 1em; margin-right: 0.5em; margin-left: 0.5em; padding: 0em; float: left; " >}}
+{{< image "/img/govid-5.png" "Step #4" "max-width: 200px; border: 1px solid #DDDDDD; margin-top: 0em; margin-bottom: 0.0em; margin-right: 0em; margin-left: 0.0em;" "text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 1em; margin-bottom: 1em; margin-right: 0.5em; margin-left: 0.5em; padding: 0em; float: left; " >}}
 
-{{< image "/img/unic6.jpeg" "Step #5" "max-width: 200px; border: 1px solid #DDDDDD; margin-top: 0em; margin-bottom: 0.0em; margin-right: 0em; margin-left: 0.0em;" "text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 1em; margin-bottom: 1em; margin-right: 0.5em; margin-left: 0.5em; padding: 0em; float: left; " >}}
+{{< image "/img/govid-6.jpeg" "Step #5" "max-width: 200px; border: 1px solid #DDDDDD; margin-top: 0em; margin-bottom: 0.0em; margin-right: 0em; margin-left: 0.0em;" "text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 1em; margin-bottom: 1em; margin-right: 0.5em; margin-left: 0.5em; padding: 0em; float: left; " >}}
 
-{{< image "/img/unic7.jpeg" "Step #6" "max-width: 200px; border: 1px solid #DDDDDD; margin-top: 0em; margin-bottom: 0.0em; margin-right: 0em; margin-left: 0.0em;" "text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 1em; margin-bottom: 1em; margin-right: 0.5em; margin-left: 0.5em; padding: 0em; float: left; " >}}
+{{< image "/img/govid-7.jpeg" "Step #6" "max-width: 200px; border: 1px solid #DDDDDD; margin-top: 0em; margin-bottom: 0.0em; margin-right: 0em; margin-left: 0.0em;" "text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 1em; margin-bottom: 1em; margin-right: 0.5em; margin-left: 0.5em; padding: 0em; float: left; " >}}
 
-{{< image "/img/unic8.jpeg" "Step #7" "max-width: 200px; border: 1px solid #DDDDDD; margin-top: 0em; margin-bottom: 0.0em; margin-right: 0em; margin-left: 0.0em;" "text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 1em; margin-bottom: 1em; margin-right: 0.5em; margin-left: 0.5em; padding: 0em; float: left; " >}}
+{{< image "/img/govid-8.jpeg" "Step #7" "max-width: 200px; border: 1px solid #DDDDDD; margin-top: 0em; margin-bottom: 0.0em; margin-right: 0em; margin-left: 0.0em;" "text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 1em; margin-bottom: 1em; margin-right: 0.5em; margin-left: 0.5em; padding: 0em; float: left; " >}}
 
-{{< image "/img/unic9.jpeg" "Step #8" "max-width: 200px; border: 1px solid #DDDDDD; margin-top: 0em; margin-bottom: 0.0em; margin-right: 0em; margin-left: 0.0em;" "text-align: center; font-style: italic; font-size: smaller; text-indent: 0;  margin-top: 1em; margin-bottom: 1em; margin-right: 0.5em; margin-left: 0.5em; padding: 0em; float: left; " >}}
+
 
 {{< clear-float >}}
 
 #### Demo #2: Present Your Demo Credential to Authenticate on a Verifiable Service
 
-With your computer, open the [UnicID VERIFIER demo](https://unic-id-verifier.demos.dev.2060.io/en). A QR code is shown: scan it using the **Hologram Messaging App**.
+With your computer, open the [GovID VERIFIER demo](https://gov-id-verifier.demos.2060.io/). A QR code is shown: scan it using the **Hologram Messaging App**.
 
 1. You'll again see a **Proof-of-Trust**, verifying the identity of the **service provider** of the Verifiable Service requesting your credential.
 2. Select the credential you wish to present, then click **"Present"**.
